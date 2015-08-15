@@ -2,23 +2,23 @@
 <head>
 <meta charset="UTF-8">
 <title></title>
-<link rel="stylesheet" href="css/denglu.css"/>
-<link rel="stylesheet" type="text/css" href="plugins/JqueryPagination/jquery.pagination.css">
+<link rel="stylesheet" href="/assets/css/denglu.css"/>
+<link rel="stylesheet" type="text/css" href="/assets/plugins/JqueryPagination/jquery.pagination.css">
 </head>
 <body>
 	<div>
 		<div style="height:30px; background:#eeeeee;">
 			<div style="width:1000px; padding:8px 0;margin:0 auto; text-align:left;">
-				<a href="#" style="padding-left:20px; background:url(images/1.png) no-repeat left center;text-decoration:none;">山西教育咨询中心</a>
+				<a href="#" style="padding-left:20px; background:url(/assets/images/1.png) no-repeat left center;text-decoration:none;">山西教育咨询中心</a>
 				<a href="#">请<span style="color:#e30516;">登录</span>丨注册</a>
 				<a href="#">太原 25°C~16°C 阵雨~多云[详情]</a>
 			</div>
 		</div>
-		<div style="background:url(images/2.1.png); height:112px;">
+		<div style="background:url(/assets/images/2.1.png); height:112px;">
 			<div style="width:1000px; margin:0 auto;padding-top:16px;">
 			    <div>
 				<div style="float:left; wigth:272px;">
-					<a href="#"><img src="images/logo.png"/></a>
+					<a href="#"><img src="/assets/images/logo.png"/></a>
 				</div>
 				<div style="float:right;width:728px">
 					<div style="float:right; margin-top:15px;">
@@ -45,32 +45,32 @@
 		<div style="background:#f8cfd2; height:40px;">
 			<div style="width:1000px; margin:0 auto;">
 			    <ul style="float:left;text-align:center;">
-					<li style="float:left; padding:11px 0; width:111px;">
-						<a style="font-size:18px; ">首页</a>
+					<li style="float:left; padding:11px 0; width:100px;">
+						<a  href="/" style="font-size:14px; ">首页</a>
 					</li>
-					<li style="float:left; padding:11px 0; width:111px; background:#e62232;">
-						<a style="font-size:18px; color:#ffffff;">新闻</a>
+					<li style="float:left; padding:11px 0; width:100px; background:#e62232;">
+						<a style="font-size:14px; color:#ffffff;">新闻</a>
 					</li>
-					<li style="float:left; padding:11px 0; width:111px;">
-						<a style="font-size:18px;">教育</a>
+					<li style="float:left; padding:11px 0; width:100px;">
+						<a href="/home/edu" style="font-size:14px;">教育</a>
 					</li>
-					<li style="float:left; padding:11px 0; width:111px;">
-						<a style="font-size:18px;">市县</a>
+					<li style="float:left; padding:11px 0; width:100px;">
+						<a href="/home/area" style="font-size:14px;">市县</a>
 					</li>
-					<li style="float:left; padding:11px 0; width:111px;">
-						<a style="font-size:18px;">招考</a>
+					<li style="float:left; padding:11px 0; width:100px;">
+						<a href="/home/enrol" style="font-size:14px;">招考</a>
 					</li>
-					<li style="float:left; padding:11px 0; width:111px;">
-						<a style="font-size:18px;">学校</a>
+					<li style="float:left; padding:11px 0; width:100px;">
+						<a href="/home/school" style="font-size:14px;">学校</a>
 					</li>
-					<li style="float:left; padding:11px 0; width:111px;">
-						<a style="font-size:18px;">政策</a>
+					<li style="float:left; padding:11px 0; width:100px;">
+						<a href="/home/policy" style="font-size:14px;">政策</a>
 					</li>
-					<li style="float:left; padding:11px 0; width:111px;">
-						<a style="font-size:18px;">活动</a>
+					<li style="float:left; padding:11px 0; width:100px;">
+						<a href="/home/active" href="active.html" style="font-size:14px;">活动</a>
 					</li>
-					<li style="float:left; padding:11px 0; width:111px;">
-						<a style="font-size:18px;">关于</a>
+					<li style="float:left; padding:11px 0; width:100px;">
+						<a href="/home/about" href="about.html" style="font-size:14px;">关于</a>
 					</li>
 					<div style="clear:both;"></div>
 				</ul>
@@ -81,18 +81,18 @@
 				<div style="text-align:left; padding-top:8px;"> 
 					<ul>
 					    <li style="float:left;">
-							<a><img src="images/30.png"/></a>
+							<a><img src="/assets/images/30.png"/></a>
 						</li>
 						<li style="float:left; margin-left:26px; margin-top:10px;">	
-							<a href="#" style="color:#ffffff;">资 讯</a>
+							<a href="/home/newsSub" style="color:#ffffff;">资 讯</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">时 评</a>
+							<a href="/home/newsSub"  style="color:#ffffff;">时 评</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">人 物</a>
+							<a href="/home/newsSub"  style="color:#ffffff;">人 物</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">三晋教育</a>
+							<a href="/home/newsSub"  style="color:#ffffff;">三晋教育</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">教育广角</a>
+							<a href="/home/newsSub"  style="color:#ffffff;">教育广角</a>
 						</li>
 						<div style="clear:both;"></div>
 					</ul>
@@ -112,7 +112,7 @@
 				<div style="border:1px solid #d4d4d4;">
 					<div style="padding:20px 20px;">
 						<ul>
-							<li style="float:left;"><img src="images/81.png"/></li>
+							<li style="float:left;"><img src="/assets/images/81.png"/></li>
 							<li style="float:left; padding:20px 40px;">
 								<p style="font-size:18px; color:#008cc8;">山西大学附中为藏族学生举办成人礼：要懂得感恩</p>
 								<div style="padding:35px 0;">

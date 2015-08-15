@@ -83,25 +83,25 @@
 							<a><img src="/assets/images/58.png"/></a>
 						</li>
 						<li style="float:left; margin-left:26px; margin-top:10px;">	
-							<a href="#" style="color:#ffffff;">太 原</a>
+							<a href="/home/areaSub" style="color:#ffffff;">太 原</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">临 汾</a>
+							<a href="/home/areaSub"  style="color:#ffffff;">临 汾</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">运 城</a>
+							<a href="/home/areaSub"  style="color:#ffffff;">运 城</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">晋 城</a>
+							<a href="/home/areaSub"  style="color:#ffffff;">晋 城</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">长 治</a>
+							<a href="/home/areaSub"  style="color:#ffffff;">长 治</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">阳 泉</a>
+							<a href="/home/areaSub"  style="color:#ffffff;">阳 泉</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">晋 中</a>
+							<a href="/home/areaSub"  style="color:#ffffff;">晋 中</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">忻 州</a>
+							<a href="/home/areaSub"  style="color:#ffffff;">忻 州</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">朔 州</a>
+							<a href="/home/areaSub"  style="color:#ffffff;">朔 州</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">吕 梁</a>
+							<a href="/home/areaSub"  style="color:#ffffff;">吕 梁</a>
 						</li>
 						<div style="clear:both;"></div>
 					</ul>

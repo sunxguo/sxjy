@@ -2,23 +2,23 @@
 <head>
 <meta charset="UTF-8">
 <title></title>
-<link rel="stylesheet" href="css/denglu.css"/>
+<link rel="stylesheet" href="/assets/css/denglu.css"/>
 </head>
 <body>
 	<div>
 		<div style="height:30px; background:#eeeeee;">
 			<div style="width:1000px; padding:8px 0;margin:0 auto; text-align:left;">
-				<a href="#" style="padding-left:20px; background:url(images/1.png) no-repeat left center;text-decoration:none;">山西教育咨询中心</a>
+				<a href="#" style="padding-left:20px; background:url(/assets/images/1.png) no-repeat left center;text-decoration:none;">山西教育咨询中心</a>
 				<a href="#">请<span style="color:#e30516;">登录</span>丨注册</a>
 				<a href="#">太原 25°C~16°C 阵雨~多云[详情]</a>
 			</div>
 		</div>
 	</div>
-	<div style="background:url(images/2.1.png); height:112px;">
+	<div style="background:url(/assets/images/2.1.png); height:112px;">
 		<div style="width:1000px; margin:0 auto;padding-top:16px;">
 			<div style="width:1000px;">
 				<div style="float:left;">
-					<a href="#"><img src="images/logo.png"/></a>
+					<a href="#"><img src="/assets/images/logo.png"/></a>
 				</div>
 				<div style="float:right;">
 					<div style="float:right; margin-top:15px;">
@@ -43,32 +43,32 @@
 	<div style="background:#cdebdb; height:40px;">
 		<div style="width:1000px; margin:0 auto;">
 			<ul style="float:left;text-align:center;">
-				<li style="float:left; padding:11px 0; width:111px;">
-					<a style="font-size:18px; ">首页</a>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/" style="font-size:14px; ">首页</a>
 				</li>
-				<li style="float:left; padding:11px 0; width:111px;">
-					<a style="font-size:18px;">新闻</a>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/home/news" style="font-size:14px;">新闻</a>
 				</li>
-				<li style="float:left; padding:11px 0; width:111px; background:#099c50;">
-					<a style="font-size:18px; color:#ffffff;">教育</a>
+				<li style="float:left; padding:11px 0; width:100px; background:#099c50;">
+					<a style="font-size:14px; color:#ffffff;">教育</a>
 				</li>
-				<li style="float:left; padding:11px 0; width:111px;">
-					<a style="font-size:18px;">市县</a>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/home/area" style="font-size:14px;">市县</a>
 				</li>
-				<li style="float:left; padding:11px 0; width:111px;">
-					<a style="font-size:18px;">招考</a>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/home/enrol" style="font-size:14px;">招考</a>
 				</li>
-				<li style="float:left; padding:11px 0; width:111px;">
-					<a style="font-size:18px;">学校</a>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/home/school" style="font-size:14px;">学校</a>
 				</li>
-				<li style="float:left; padding:11px 0; width:111px;">
-					<a style="font-size:18px;">政策</a>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/home/policy" style="font-size:14px;">政策</a>
 				</li>
-				<li style="float:left; padding:11px 0; width:111px;">
-					<a style="font-size:18px;">活动</a>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/home/active" style="font-size:14px;">活动</a>
 				</li>
-				<li style="float:left; padding:11px 0; width:111px;">
-					<a style="font-size:18px;">关于</a>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/home/about" style="font-size:14px;">关于</a>
 				</li>
 				<div style="clear:both;"></div>
 			</ul>
@@ -79,28 +79,28 @@
 			<div style="text-align:left; padding-top:8px;"> 
 				<ul>
 					<li style="float:left;">
-						<a><img src="images/45.png"/></a>
+						<a><img src="/assets/images/45.png"/></a>
 					</li>
 					<li style="float:left; margin-left:26px; margin-top:10px;">	
-						<a href="#" style="color:#ffffff;">幼 教</a>
+						<a href="/home/eduSub" style="color:#ffffff;">幼 教</a>
 						<b style="color:#ffffff;">丨</b>
-						<a href="#"  style="color:#ffffff;">基 教</a>
+						<a href="/home/eduSub"  style="color:#ffffff;">基 教</a>
 						<b style="color:#ffffff;">丨</b>
-						<a href="#"  style="color:#ffffff;">高 校</a>
+						<a href="/home/eduSub"  style="color:#ffffff;">高 校</a>
 						<b style="color:#ffffff;">丨</b>
-						<a href="#"  style="color:#ffffff;">职 教</a>
+						<a href="/home/eduSub"  style="color:#ffffff;">职 教</a>
 						<b style="color:#ffffff;">丨</b>
-						<a href="#"  style="color:#ffffff;">留 学</a>
+						<a href="/home/eduSub"  style="color:#ffffff;">留 学</a>
 						<b style="color:#ffffff;">丨</b>
-						<a href="#"  style="color:#ffffff;">家 教</a>
+						<a href="/home/eduSub"  style="color:#ffffff;">家 教</a>
 						<b style="color:#ffffff;">丨</b>
-						<a href="#"  style="color:#ffffff;">心 理</a>
+						<a href="/home/eduSub"  style="color:#ffffff;">心 理</a>
 						<b style="color:#ffffff;">丨</b>
-						<a href="#"  style="color:#ffffff;">下 载</a>
+						<a href="/home/eduSub"  style="color:#ffffff;">下 载</a>
 						<b style="color:#ffffff;">丨</b>
-						<a href="#"  style="color:#ffffff;">读 书</a>
+						<a href="/home/eduSub"  style="color:#ffffff;">读 书</a>
 						<b style="color:#ffffff;">丨</b>
-						<a href="#"  style="color:#ffffff;">培 训</a>
+						<a href="/home/eduSub"  style="color:#ffffff;">培 训</a>
 					</li>
 					<div style="clear:both;"></div>
 				</ul>
@@ -117,10 +117,10 @@
 				<div style="clear:both;"></div>
 			</ul>
 			<div style="padding:0 30px;">
-				<img src="images/82.png"/>
+				<img src="/assets/images/82.png"/>
 				<div style="border:1px solid #d4d4d4; height:880px; margin:20px 0;">
 					<ul style="padding:10px 20px; margin-top:10px;">
-						<li style="float:left;"><img src="images/83.png"/></li>
+						<li style="float:left;"><img src="/assets/images/83.png"/></li>
 						<li style="float:left; padding:5px 30px;">
 							<p style="font-size:18px; color:#008cc8;">2015年山西幼儿教育要有五个“大动作”</p>
 							<div style="padding:20px 0;">
@@ -135,7 +135,7 @@
 						<li><div style="border-top:1px dashed #d4d4d4;"></div></li>
 					</ul>
 					<ul style="padding:10px 20px;">
-						<li style="float:left;"><img src="images/83.png"/></li>
+						<li style="float:left;"><img src="/assets/images/83.png"/></li>
 						<li style="float:left; padding:5px 30px;">
 							<p style="font-size:18px; color:#008cc8;">2015年山西幼儿教育要有五个“大动作”</p>
 							<div style="padding:20px 0;">

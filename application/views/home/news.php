@@ -84,15 +84,15 @@
 							<a><img src="/assets/images/30.png"/></a>
 						</li>
 						<li style="float:left; margin-left:26px; margin-top:10px;">	
-							<a href="#" style="color:#ffffff;">资 讯</a>
+							<a href="/home/newsSub" style="color:#ffffff;">资 讯</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">时 评</a>
+							<a href="/home/newsSub"  style="color:#ffffff;">时 评</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">人 物</a>
+							<a href="/home/newsSub"  style="color:#ffffff;">人 物</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">三晋教育</a>
+							<a href="/home/newsSub"  style="color:#ffffff;">三晋教育</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">教育广角</a>
+							<a href="/home/newsSub"  style="color:#ffffff;">教育广角</a>
 						</li>
 						<div style="clear:both;"></div>
 					</ul>

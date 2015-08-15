@@ -51,10 +51,10 @@
 						<a href="/home/news" style="font-size:14px; ">新闻</a>
 					</li>
 					<li style="float:left; padding:11px 0; width:111px;">
-						<a href="/edu" style="font-size:14px;">教育</a>
+						<a href="/home/edu" style="font-size:14px;">教育</a>
 					</li>
 					<li style="float:left; padding:11px 0; width:111px;">
-						<a href="/area" style="font-size:14px;">市县</a>
+						<a href="/home/area" style="font-size:14px;">市县</a>
 					</li>
 					<li style="float:left; padding:11px 0; width:111px;">
 						<a href="/home/enrol" style="font-size:14px;">招考</a>

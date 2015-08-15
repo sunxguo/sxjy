@@ -9,11 +9,20 @@ class Home extends CI_Controller {
 	public function news(){
 		$this->load->view('/home/news');
 	}
+	public function newsSub(){
+		$this->load->view('/home/newsSub');
+	}
 	public function edu(){
 		$this->load->view('/home/edu');
 	}
+	public function eduSub(){
+		$this->load->view('/home/eduSub');
+	}
 	public function area(){
 		$this->load->view('/home/area');
+	}
+	public function areaSub(){
+		$this->load->view('/home/areaSub');
 	}
 	public function enrol(){
 		$this->load->view('/home/enrol');

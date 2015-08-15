@@ -82,25 +82,25 @@
 							<a><img src="/assets/images/45.png"/></a>
 						</li>
 						<li style="float:left; margin-left:26px; margin-top:10px;">	
-							<a href="#" style="color:#ffffff;">幼 教</a>
+							<a href="/home/eduSub" style="color:#ffffff;">幼 教</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">基 教</a>
+							<a href="/home/eduSub"  style="color:#ffffff;">基 教</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">高 校</a>
+							<a href="/home/eduSub"  style="color:#ffffff;">高 校</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">职 教</a>
+							<a href="/home/eduSub"  style="color:#ffffff;">职 教</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">留 学</a>
+							<a href="/home/eduSub"  style="color:#ffffff;">留 学</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">家 教</a>
+							<a href="/home/eduSub"  style="color:#ffffff;">家 教</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">心 理</a>
+							<a href="/home/eduSub"  style="color:#ffffff;">心 理</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">下 载</a>
+							<a href="/home/eduSub"  style="color:#ffffff;">下 载</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">读 书</a>
+							<a href="/home/eduSub"  style="color:#ffffff;">读 书</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="#"  style="color:#ffffff;">培 训</a>
+							<a href="/home/eduSub"  style="color:#ffffff;">培 训</a>
 						</li>
 						<div style="clear:both;"></div>
 					</ul>

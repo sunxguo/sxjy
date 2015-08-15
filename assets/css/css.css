@@ -1,0 +1,10 @@
+*{margin:0; padding:0; border:0; font-size:14px;}
+.head{width:100%; height:394px;}
+.head-top{width:100%; height:28px; background:#e4e4e4;}
+.head-content{width:100%; height:80px; background:#f2f2f2;}
+.head-foot{width:100%; height:44px; background:#d7d7d7;}
+.head-advertising{width:100%; height:240px; border:1px solid #d9d9d9; text-align:center;}
+.content{width:100%; height:500px;}
+.content-mine{width:960px; height:500px; background:#cccccc; margin-left: auto; margin-right: auto;}
+.foot{width:100%; height:120px; background:#f2f2f2; text-align:center;}
+.foot p{ padding-top:10px;}

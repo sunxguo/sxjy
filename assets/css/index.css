@@ -1,0 +1,90 @@
+*{margin:0; padding:0; list-style-type:none; text-decoration:none; color:#292929;}
+body,
+button, input, select, textarea { /* for ie */
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+    font: 14px/1 "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+}
+.header{background:#eeeeee;}
+.head-hd{width:960px; margin:0 auto; padding:5px 0;}
+.head-hd p{font-size:12px;color:#292929;}
+.head-hd p a{font-size:12px; text-decoration:none; }
+.head-hd p a span{font-size:12px; color:#e30516;}
+
+.head-ct{width:960px; margin:0 auto; padding:20px 0;}
+.head-ct-left{float:left;}
+.head-ct-right{float:right; margin-top:15px;}
+.head-ct-right ul li a{padding:0 5px; color:#292929;}
+.head-ct-right input{background:#eeeeee; border:1px solid #d4d4d4; width:320px; height:30px; margin-top:5px;}
+.head-ct-right button{background:#eeeeee; width:68px; height:32px; border:1px solid #d4d4d4; margin-left:-4px;}
+
+.footer{background:#cde8f4; margin-top:10px;}
+.footer-hd{ width:960px; margin:0 auto;}
+
+.footer-ft{background-image:url(../images/4.png);height:270px;}
+.footer-ft-top{width:960px;  margin:0 auto;}
+.footer-ft-top-left{width:480px; float:left;  padding:10px 0;}
+.footer-ft-top-left h4,p{color:#ffffff;}
+.footer-ft-top-left ul li{background:#0075a9; width:200px;  text-align:center;}
+.footer-ft-top-left ul li a{padding:0 5px; font-size:10px; color:#c8c8c8;}
+.footer-ft-top-right{float:right; text-align:center; }
+
+.centent-one{width:960px; margin:10px auto; border:1px solid #b4b4b4;}
+.centent-one ul{padding:12px 0;}
+
+.cen{margin-top:40px;}
+.cen-one{width:960px; margin:0 auto;}
+.cen-one-left{float:left; width:660px;}
+.left-one{border:1px solid #b4b4b4; padding:15px 0;}
+.left-one h1{color:#0075a9; font-size:36px; text-align:center;}
+.left-one p{color:#292929; text-align:center; margin-top:5px;}
+.left-two{width:660px; margin-top:44px;}
+.left-two-left{width:310px; float:left;}
+.laba{padding:28px; background:url(../images/11.png) no-repeat left center;  color:#e60012; text-decoration:none;}
+.left-two-left ul li{padding:10px 0;}
+.left-two-right{float:right; width:310px;}
+.left-two-right ul li{padding:10px 0;}
+
+
+.left-three{margin-top:50px;}
+.left-three-left{width:310px; float:left;}
+.left-three-left ul{margin-top:30px;}
+.labathree{padding:0 5px 0 25px; text-decoration:none;position: relative;}
+.color>a.labathree{color: #e60012;}
+
+
+.left-three-right{float:right; width:310px; margin-top:58px;}
+
+.cen-one-right{float:right; width:280px;}
+
+.qwe ul li{padding:10px 20px;}
+.qwe ul li a{color:#ffffff; width:190px;}
+
+
+
+/* ==========================================================================
+    Yumlee
+   ========================================================================== */
+.clearfix:after { content: "."; display: block; height:   0; clear: both; visibility: hidden }
+i{font-size: 150%;color: #0075A9;}
+nav li>a {display: block;}
+nav.nav>ul>li{float: left;width: 11%;text-align: center;padding: 13px 0;}
+.active{background:#0075a9;}
+.active a{color: #fff;}
+nav.nav li:hover{background: #0075a9;}
+nav.nav li:hover>a{color: #fff;}
+.f12{font-size: 12px;}
+.color>a{color: #0075a9;}
+.color>b{color: #0075a9;}
+
+/*swiper*/
+.swiperNews{width: 320px;overflow: hidden;border:1px solid #cecece;}
+.swiperBanner,.swiperNews,.swiperSide{position: relative;}
+.paginationBanner{position: absolute;bottom: 10px;z-index: 100;}
+.paginationSide{position: absolute;top: -35px;left: 52px;}
+.banner-btn{position: absolute;bottom: 10px;left: 368px;padding: 5px 15px;background-color: rgba(0,0,0,0.2);color: #fff;z-index: 100;}
+.banner-btn>a{color: #fff;}
+.swiperBanner .swiper-pagination-bullet,
+.swiperNews .swiper-pagination-bullet {width: 35px;height: 21px;color: #fff;line-height: 21px;border-radius: 0;text-align: center;}
+/*icon*/
+.labathree>i{position: absolute;top: 0px;left: 3px;}

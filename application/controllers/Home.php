@@ -30,6 +30,9 @@ class Home extends CI_Controller {
 	public function policy(){
 		$this->load->view('/home/policy');
 	}
+	public function policySub(){
+		$this->load->view('/home/policySub');
+	}
 	public function active(){
 		$this->load->view('/home/active');
 	}

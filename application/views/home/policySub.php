@@ -2,23 +2,23 @@
 <head>
 <meta charset="UTF-8">
 <title>政策-</title>
-<link rel="stylesheet" href="css/denglu.css"/>
+<link rel="stylesheet" href="/assets/css/denglu.css"/>
 </head>
 <body>
 	<div>
 		<div style="height:30px; background:#eeeeee;">
 			<div style="width:1000px; padding:8px 0;margin:0 auto; text-align:left;">
-				<a href="#" style="padding-left:20px; background:url(images/1.png) no-repeat left center;text-decoration:none;">山西教育咨询中心</a>
+				<a href="#" style="padding-left:20px; background:url(/assets/images/1.png) no-repeat left center;text-decoration:none;">山西教育咨询中心</a>
 				<a href="#">请<span style="color:#e30516;">登录</span>丨注册</a>
 				<a href="#">太原 25°C~16°C 阵雨~多云[详情]</a>
 			</div>
 		</div>
 	</div>
-	<div style="background:url(images/2.1.png); height:112px;">
+	<div style="background:url(/assets/images/2.1.png); height:112px;">
 		<div style="width:1000px; margin:0 auto;padding-top:16px;">
 			<div style="width:1000px;">
 				<div style="float:left;">
-					<a href="#"><img src="images/logo.png"/></a>
+					<a href="#"><img src="/assets/images/logo.png"/></a>
 				</div>
 				<div style="float:right;">
 					<div style="float:right; margin-top:15px;">
@@ -43,32 +43,32 @@
 	<div style="background:#e1e1ee; height:40px;">
 		<div style="width:1000px; margin:0 auto;">
 			<ul style="float:left;text-align:center;">
-				<li style="float:left; padding:11px 0; width:111px;">
-					<a style="font-size:18px; ">首页</a>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/" style="font-size:14px; ">首页</a>
 				</li>
-				<li style="float:left; padding:11px 0; width:111px;">
-					<a style="font-size:18px;">新闻</a>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/home/news" style="font-size:14px;">新闻</a>
 				</li>
-				<li style="float:left; padding:11px 0; width:111px;">
-					<a style="font-size:18px; ">教育</a>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/home/edu" style="font-size:14px; ">教育</a>
 				</li>
-				<li style="float:left; padding:11px 0; width:111px;">
-					<a style="font-size:18px;">市县</a>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/home/area" style="font-size:14px;">市县</a>
 				</li>
-				<li style="float:left; padding:11px 0; width:111px;">
-					<a style="font-size:18px;">招考</a>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/home/enrol" style="font-size:14px;">招考</a>
 				</li>
-				<li style="float:left; padding:11px 0; width:111px;">
-					<a style="font-size:18px;">学校</a>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/home/school" style="font-size:14px;">学校</a>
 				</li>
-				<li style="float:left; padding:11px 0; width:111px; background:#6762a6;">
-					<a style="font-size:18px; color:#ffffff;">政策</a>
+				<li style="float:left; padding:11px 0; width:100px; background:#6762a6;">
+					<a style="font-size:14px; color:#ffffff;">政策</a>
 				</li>
-				<li style="float:left; padding:11px 0; width:111px;">
-					<a style="font-size:18px;">活动</a>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/home/active" style="font-size:14px;">活动</a>
 				</li>
-				<li style="float:left; padding:11px 0; width:111px;">
-					<a style="font-size:18px;">关于</a>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/home/about" style="font-size:14px;">关于</a>
 				</li>
 				<div style="clear:both;"></div>
 			</ul>
@@ -79,16 +79,16 @@
 			<div style="text-align:left; padding-top:8px;"> 
 				<ul>
 					<li style="float:left;">
-						<a><img src="images/79.png"/></a>
+						<a><img src="/assets/images/79.png"/></a>
 					</li>
 					<li style="float:left; margin-left:26px; margin-top:10px;">	
-						<a href="#" style="color:#ffffff;">国 内</a>
+						<a href="/home/policySub" style="color:#ffffff;">国 内</a>
 						<b style="color:#ffffff;">丨</b>
-						<a href="#"  style="color:#ffffff;">省 内</a>
+						<a href="/home/policySub"  style="color:#ffffff;">省 内</a>
 						<b style="color:#ffffff;">丨</b>
-						<a href="#"  style="color:#ffffff;">区 域</a>
+						<a href="/home/policySub"  style="color:#ffffff;">区 域</a>
 						<b style="color:#ffffff;">丨</b>
-						<a href="#"  style="color:#ffffff;">相 关</a>
+						<a href="/home/policySub"  style="color:#ffffff;">相 关</a>
 					</li>
 					<div style="clear:both;"></div>
 				</ul>
@@ -108,7 +108,7 @@
 				<div style="width:960px; height:320px; margin:20px;">
 					<ul>
 						<li style="float:left;">
-							<img src="images/90.png"/>
+							<img src="/assets/images/90.png"/>
 						</li>
 						<li style="float:left; padding:10px 30px;">
 							<p style="font-size:18px; color:#0075a9;">晋中学院专家来我市开展“国培计划”</p>

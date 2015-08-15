@@ -2,22 +2,22 @@
 <head>
 <meta charset="UTF-8">
 <title>关于</title>
-<link rel="stylesheet" href="css/denglu.css"/>
+<link rel="stylesheet" href="/assets/css/denglu.css"/>
 </head>
 <body>
 	<div>
 		<div style="height:30px; background:#eeeeee;">
 			<div style="width:1000px; padding:8px 0;margin:0 auto; text-align:left;">
-				<a href="#" style="padding-left:20px; background:url(images/1.png) no-repeat left center;text-decoration:none;">山西教育咨询中心</a>
+				<a href="#" style="padding-left:20px; background:url(/assets/images/1.png) no-repeat left center;text-decoration:none;">山西教育咨询中心</a>
 				<a href="#">请<span style="color:#e30516;">登录</span>丨注册</a>
 				<a href="#">太原 25°C~16°C 阵雨~多云[详情]</a>
 			</div>
 		</div>
-		<div style="background:url(images/2.1.png); height:112px;">
+		<div style="background:url(/assets/images/2.1.png); height:112px;">
 			<div style="width:1000px; margin:0 auto;padding-top:16px;">
 			    <div>
 				<div style="float:left; wigth:272px;">
-					<a href="#"><img src="images/logo.png"/></a>
+					<a href="#"><img src="/assets/images/logo.png"/></a>
 				</div>
 				<div style="float:right;width:728px">
 					<div style="float:right; margin-top:15px;">
@@ -45,31 +45,31 @@
 			<div style="width:1000px; margin:0 auto;">
 			    <ul style="float:left;text-align:center;">
 					<li style="float:left; padding:11px 0; width:111px;">
-						<a href="index.html" style="font-size:18px; ">首页</a>
+						<a href="/" style="font-size:14px; ">首页</a>
 					</li>
 					<li style="float:left; padding:11px 0; width:111px;">
-						<a href="news.html" style="font-size:18px; ">新闻</a>
+						<a href="/home/news" style="font-size:14px; ">新闻</a>
 					</li>
 					<li style="float:left; padding:11px 0; width:111px;">
-						<a href="edu.html" style="font-size:18px;">教育</a>
+						<a href="/edu" style="font-size:14px;">教育</a>
 					</li>
 					<li style="float:left; padding:11px 0; width:111px;">
-						<a href="area.html" style="font-size:18px;">市县</a>
+						<a href="/area" style="font-size:14px;">市县</a>
 					</li>
 					<li style="float:left; padding:11px 0; width:111px;">
-						<a href="enrol.html" style="font-size:18px;">招考</a>
+						<a href="/home/enrol" style="font-size:14px;">招考</a>
 					</li>
 					<li style="float:left; padding:11px 0; width:111px;">
-						<a href="school.html" style="font-size:18px;">学校</a>
+						<a href="/home/school" style="font-size:14px;">学校</a>
 					</li>
 					<li style="float:left; padding:11px 0; width:111px;">
-						<a href="policy.html" style="font-size:18px;">政策</a>
+						<a href="/home/policy" style="font-size:14px;">政策</a>
 					</li>
 					<li style="float:left; padding:11px 0; width:111px;">
-						<a href="active.html" style="font-size:18px;">活动</a>
+						<a href="/home/active" style="font-size:14px;">活动</a>
 					</li>
 					<li style="float:left; padding:11px 0; width:111px; background:#078fc9;">
-						<a style="font-size:18px;color:#ffffff;">关于</a>
+						<a style="font-size:14px;color:#ffffff;">关于</a>
 					</li>
 					<div style="clear:both;"></div>
 				</ul>

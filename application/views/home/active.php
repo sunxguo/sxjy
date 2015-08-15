@@ -2,22 +2,22 @@
 <head>
 <meta charset="UTF-8">
 <title></title>
-<link rel="stylesheet" href="css/denglu.css"/>
+<link rel="stylesheet" href="/assets/css/denglu.css"/>
 </head>
 <body>
 	<div>
 		<div style="height:30px; background:#eeeeee;">
 			<div style="width:1000px; padding:8px 0;margin:0 auto; text-align:left;">
-				<a href="#" style="padding-left:20px; background:url(images/1.png) no-repeat left center;text-decoration:none;">山西教育咨询中心</a>
+				<a href="#" style="padding-left:20px; background:url(/assets/images/1.png) no-repeat left center;text-decoration:none;">山西教育咨询中心</a>
 				<a href="#">请<span style="color:#e30516;">登录</span>丨注册</a>
 				<a href="#">太原 25°C~16°C 阵雨~多云[详情]</a>
 			</div>
 		</div>
-		<div style="background:url(images/2.1.png); height:112px;">
+		<div style="background:url(/assets/images/2.1.png); height:112px;">
 			<div style="width:1000px; margin:0 auto;padding-top:16px;">
 			    <div>
 				<div style="float:left; wigth:272px;">
-					<a href="#"><img src="images/logo.png"/></a>
+					<a href="#"><img src="/assets/images/logo.png"/></a>
 				</div>
 				<div style="float:right;width:728px">
 					<div style="float:right; margin-top:15px;">
@@ -45,31 +45,31 @@
 			<div style="width:1000px; margin:0 auto;">
 			    <ul style="float:left;text-align:center;">
 					<li style="float:left; padding:11px 0; width:111px;">
-						<a href="index.html" style="font-size:18px; ">首页</a>
+						<a href="/" style="font-size:14px; ">首页</a>
 					</li>
 					<li style="float:left; padding:11px 0; width:111px;">
-						<a href="news.html" style="font-size:18px; ">新闻</a>
+						<a href="/home/news" style="font-size:14px; ">新闻</a>
 					</li>
 					<li style="float:left; padding:11px 0; width:111px;">
-						<a href="edu.html" style="font-size:18px;">教育</a>
+						<a href="/home/edu" style="font-size:14px;">教育</a>
 					</li>
 					<li style="float:left; padding:11px 0; width:111px;">
-						<a href="area.html" style="font-size:18px;">市县</a>
+						<a href="/home/area" style="font-size:14px;">市县</a>
 					</li>
 					<li style="float:left; padding:11px 0; width:111px;">
-						<a href="enrol.html" style="font-size:18px;">招考</a>
+						<a href="/home/enrol" style="font-size:14px;">招考</a>
 					</li>
 					<li style="float:left; padding:11px 0; width:111px;">
-						<a href="school.html" style="font-size:18px;">学校</a>
+						<a href="/home/school" style="font-size:14px;">学校</a>
 					</li>
 					<li style="float:left; padding:11px 0; width:111px;">
-						<a href="policy.html" style="font-size:18px;">政策</a>
+						<a href="/home/policy" style="font-size:14px;">政策</a>
 					</li>
 					<li style="float:left; padding:11px 0; width:111px; background:#078fc9;">
-						<a style="font-size:18px;color:#ffffff;">活动</a>
+						<a style="font-size:14px;color:#ffffff;">活动</a>
 					</li>
 					<li style="float:left; padding:11px 0; width:111px;">
-						<a href="about.html" style="font-size:18px;">关于</a>
+						<a href="/home/about" style="font-size:14px;">关于</a>
 					</li>
 					<div style="clear:both;"></div>
 				</ul>
@@ -79,7 +79,7 @@
 		</div>
 		<div style="width:1000px; margin:0 auto;">
 			<div style="padding:10px 0;">
-				<a><img src="images/55.png"/></a>
+				<a><img src="/assets/images/55.png"/></a>
 			</div>
 			<div style="border:1px solid #d4d4d4; height:366px;">
 				<div style="padding:10px 15px;">
@@ -88,7 +88,7 @@
 				<div style="border-top:1px dashed #d4d4d4;"></div>
 				<div style="padding:20px 15px;">
 					<ul>
-						<li style="float:left"><img src="images/56.png"/></li>
+						<li style="float:left"><img src="/assets/images/56.png"/></li>
 						<li style="float:left; padding:10px 20px;">
 							<p style="padding:10px 0px;">活动名称： 第五届新少年中小学生英语应用性阅读活动</p>
 							<p style="padding:10px 0px;">活动时间： 2015年4月-6月</p>
@@ -113,7 +113,7 @@
 				<div style="border-top:1px dashed #d4d4d4;"></div>
 				<div style="padding:20px 15px;">
 					<ul>
-						<li style="float:left"><img src="images/57.png"/></li>
+						<li style="float:left"><img src="/assets/images/57.png"/></li>
 						<li style="float:left; padding:10px 20px;">
 							<p style="padding:10px 0px;">活动名称： 第11届新少年中小学生现场英语作文活动 </p>
 							<p style="padding:10px 0px;">活动时间： 2014年9月-12月 </p>
@@ -192,7 +192,7 @@
 				</ul>
 			</div>
 			<div style="padding:10px 0;">
-				<a><img src="images/55.png"/></a>
+				<a><img src="/assets/images/55.png"/></a>
 			</div>
 		</div>
 		<div style="background:#959595; margin-top:40px;">

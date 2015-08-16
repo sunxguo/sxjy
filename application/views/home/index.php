@@ -8,33 +8,7 @@
 </head>
 <body>
 <div class="head">
-   <div class="header">
-        <div class="head-hd">
-	        <p><img src="/assets/images/1.png">&nbsp;山西教育咨询中心&nbsp;&nbsp;请<a href="#"><span>登录</span><b>丨</b>注册</a>&nbsp;&nbsp;&nbsp;太原&nbsp;25°C~16°C&nbsp;阵雨~多云&nbsp;[详情]</p>
-	    </div>
-   </div>
-   <div class="centent">
-        <div class="head-ct">
-	        <div class="head-ct-left">
-		        <a href="#"><img src="/assets/images/logo.png"/></a>
-		    </div>
-		    <div class="head-ct-right">
-		        <ul>
-		            <li>
-			            <a href="#" style="color:red;">新 闻</a>
-				        <a href="#">图 片</a>
-				        <a href="#">视 频</a>
-				        <a href="#">学 校</a>
-				        <a href="#">资 源</a>
-				        <a href="#">百 度</a>
-			        </li>
-		        </ul>
-		        <input class="search-text" type="text">
-		        <button>搜索</button>
-		    </div>
-	    </div>	
-    </div>
-    <div style="clear:both;"></div>
+	<?php require('head.php');?>
     <div class="footer">
         <nav class="footer-hd nav">
         	<ul class="clearfix">
@@ -451,28 +425,7 @@
 		</ul>
 	</div>
 </div>
-<div style="background:#959595; height:200px;margin-top:40px;">
-    <div style="text-align:center;">
-	    <ul>
-		    <li style="padding:40px 0;">
-			    <a href="#" style="color:#ffffff; font-weight:bold;">关于我们</a>
-				<b style="color:#ffffff;">丨</b>
-				<a href="#" style="color:#ffffff; font-weight:bold;">联系我们</a>
-				<b style="color:#ffffff;">丨</b>
-				<a href="#" style="color:#ffffff; font-weight:bold;">法律顾问</a>
-				<b style="color:#ffffff;">丨</b>
-				<a href="#" style="color:#ffffff; font-weight:bold;">意见反馈</a>
-				<b style="color:#ffffff;">丨</b>
-				<a href="#" style="color:#ffffff; font-weight:bold;">合作声明</a>
-				<b style="color:#ffffff;">丨</b>
-				<a href="#" style="color:#ffffff; font-weight:bold;">版权声明</a>
-			</li>
-			<li style="color:#ffffff;">主办单位：山西省教育宣传中心&nbsp;&nbsp;&nbsp;&nbsp;晋ICP备11006001号—1</li>
-			<li style="margin-top:10px; color:#ffffff;">未经山西教育在线书面协议授权不得转载、链接或以其他方式复制发表，禁止下载</li>
-			<li style="margin-top:10px; color:#ffffff;">违法不良信息举报中心&nbsp;&nbsp;网站信息举报：0351-3208490</li>
-		</ul>
-	</div>
-</div>
+<?php require('foot.php');?>
 </div>
 </body>
 <script src="/assets/plugins/swiper/swiper.min.js"></script>

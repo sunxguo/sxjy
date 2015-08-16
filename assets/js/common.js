@@ -160,6 +160,9 @@ function language(language){
 		location.reload();
 	});
 }
+function refreshCode(){
+	$("#validCodeImg").attr("src","/common/createVeriCode");
+}
 /*
 function mainCategoryChange(){
 	var category = new Object(); 

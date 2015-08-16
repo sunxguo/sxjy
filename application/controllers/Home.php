@@ -6,6 +6,9 @@ class Home extends CI_Controller {
 	public function index(){
 		$this->load->view('/home/index');
 	}
+	public function search(){
+		$this->load->view('/home/search');
+	}
 	public function news(){
 		$this->load->view('/home/news');
 	}
@@ -47,5 +50,11 @@ class Home extends CI_Controller {
 	}
 	public function about(){
 		$this->load->view('/home/about');
+	}
+	public function login(){
+		$this->load->view('/home/login');
+	}
+	public function register(){
+		$this->load->view('/home/regMail');
 	}
 }

@@ -1,9 +1,10 @@
+<script type="text/javascript" src="/assets/js/jquery-2.1.4.min.js"></script>
 <div>
 	<div style="height:30px; background:#eeeeee;">
 		<div style="width:1000px; padding:8px 0;margin:0 auto; text-align:left;">
 			<a href="#" style="padding-left:20px; background:url(/assets/images/1.png) no-repeat left center;text-decoration:none;">山西教育咨询中心</a>
-			<span href="#">请<a href="/home/login" style="color:#e30516;">登录</a>丨<a href="/home/register">注册</a></span>
-			<a href="#">太原 25°C~16°C 阵雨~多云[详情]</a>
+			<!--<span href="#">请<a href="/home/login" style="color:#e30516;">登录</a>丨<a href="/home/register">注册</a></span>-->
+			<a href="http://www.weather.com.cn/weather1d/101100101.shtml" target="_blank">太原 <span id="temp1"></span>~<span id="temp2"></span> <span id="weather"></span>[详情]</a>
 		</div>
 	</div>
 	<div style="background:url(/assets/images/2.1.png); height:112px;">
@@ -35,3 +36,17 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$.get(
+	"/common/getWeather",
+	{},
+	function(data){
+		var result=$.parseJSON(data);
+		var weatherinfo=result.weatherinfo;
+		$("#weather").text(weatherinfo.weather);
+		$("#temp1").text(weatherinfo.temp1);
+		$("#temp2").text(weatherinfo.temp2);
+	});
+});
+</script>

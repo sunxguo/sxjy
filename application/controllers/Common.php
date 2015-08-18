@@ -24,6 +24,18 @@ class Common extends CI_Controller {
 					"column_ordernum"=>$data->order_num
 				);
 			break;
+			case "essay":
+				$table="essay";
+				$info=array(
+					"column"=>$data->column,
+					"title"=>$data->title,
+					"summay"=>$data->summay,
+					"content"=>$data->content,
+					"thumbnail"=>$data->content,
+					"author"=>1,
+					"time"=>date("Y-m-d H:i:s")
+				);
+			break;
 		}
 		echo json_encode(array("result"=>"success","message"=>"Successfully Modify!"));
 	}
@@ -54,6 +66,10 @@ class Common extends CI_Controller {
 		}else{
 			echo json_encode(array("result"=>"failed","message"=>"Wrong Security code!"));
 		}
+	}
+	public function getWeather(){
+		$url="http://www.weather.com.cn/adat/cityinfo/101100101.html";
+		echo $result=httpGet($url);
 	}
 	/*
 	public function checkMobileCode(){

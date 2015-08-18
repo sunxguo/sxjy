@@ -1180,3 +1180,37 @@ margin: 0;
     clip: rect(0,0,0,0);
     pointer-events: none;
 }
+.km-form-control{
+	height:28px;
+	padding: 0 5px;
+	display:inline-block;
+}
+.km-over-layer{
+	position:absolute;
+	top:0px;
+	background:#000;
+	line-height:100px;
+	color:#48FF48;
+	opacity: 0.0;
+	text-align:center;
+	cursor:pointer;
+}
+.km-over-layer:hover {
+    opacity: 0.5;
+    color: #00B32D;
+    transition: .5s ease;
+}
+.edit-content{
+	color:#299CFF;
+	cursor: pointer;
+}
+.delete-content{
+	color:#FF5D5D;
+	cursor: pointer;
+}
+.edit-content:hover{
+	color:#337ab7;
+}
+.delete-content:hover{
+	color:#E40C0C;
+}

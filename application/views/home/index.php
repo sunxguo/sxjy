@@ -270,7 +270,7 @@
 		    <div style="border:1px solid #d4d4d4;">
 			   <p style="color:#0075a9;margin-top:10px;margin-left:20px;">HI！你好！</p>
 			   <p style="color:#0075a9; margin-top:2px;margin-left:20px;">欢迎来到山西省教育咨询中心</p>
-               <div style="padding:16px 20px;">			  
+               <div style="padding:16px 20px;">	  
 			       <a style="background:#0075a9; padding:5px 30px; color:#ffffff;">登 录</a>
 			       <a style="background:#0075a9; padding:5px 30px; margin-left:20px; color:#ffffff;">立即注册</a>
 			   </div>

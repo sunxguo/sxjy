@@ -65,12 +65,12 @@
 							    </div style="padding-top:25px;">
 								<div style="margin-top:25px;">
 									<a><font style="color:red;">*</font>验证码：</a>
-									<input type="text" style="width:94px; height:28px; border:1px solid #d4d4d4; color:#646464;font-size:12px;padding:0 13px;"/>
-									<img id="validCodeImg" src="" width="58" height="30" style="vertical-align: top;" onclick="refreshCode();">
+									<input type="text" style="width:86px; height:28px; border:1px solid #d4d4d4; color:#646464;font-size:12px;padding:0 3px;"/>
+									<img id="validCodeImg" src="" width="87" height="30" style="cursor:pointer;vertical-align: top;" onclick="refreshCode();">
 									<a style="font-size:12px;color:#C3C3C3;">点击图片更换</a>
 							    </div>
 								<div style="margin-top:25px; text-align:left; margin-left:198px;">
-									<button onclick="locaion.href='/home/register'" style="cursor:pointer;width:114px; height:30px; background:#ffc000; border-radius:5px; border:none; color:#ffffff;">立即注册</button>
+									<button onclick="register();" style="cursor:pointer;width:114px; height:30px; background:#ffc000; border-radius:5px; border:none; color:#ffffff;">立即注册</button>
 								</div>
 								<!--
 								<div style="margin-top:15px; text-align:left; margin-left:200px;">
@@ -85,5 +85,8 @@
 		</div>
 	</div>
 	<?php require('foot.php');?>
+	<script type="text/javascript">
+		refreshCode();
+	</script>
 </body>
 </html>

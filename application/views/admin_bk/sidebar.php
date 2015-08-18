@@ -11,6 +11,7 @@
             <div class="nContainer">                
                 <ul class="navigation">         
                     <li class="active"><a href="/Admin/index" class="blblue">控制面板</a></li>
+                    <!--
                     <li>
                         <a href="#" class="blyellow">网站结构</a>
                         <div class="open"></div>
@@ -18,12 +19,13 @@
                             <li><a href="/Admin/columnList">栏目管理</a></li>
                         </ul>
                     </li>
+                    -->
                     <li>
                         <a href="#" class="blgreen">内容管理</a>
                         <div class="open"></div>
                         <ul>
-                            <li><a href="forms.html">文章</a></li>
-                            <li><a href="forms.html">调查</a></li>
+                            <li><a href="/admin/homepage">首页</a></li>
+                            <li><a href="/admin/news">新闻</a></li>
                         </ul>
                     </li>
                     <li>

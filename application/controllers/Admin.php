@@ -31,10 +31,28 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/'.$view,$data);
 		$this->load->view('admin/footer');
 	}*/
+	public function adminBaseHandler($title,$sider,$view,$data){
+		if(!$this->checkAdminLogin()) return false;
+//		$websiteConfig=$this->commongetdata->getWebsiteConfig("ALLINFO");
+//		$websiteName=$websiteConfig['website_name_'.$_SESSION['language']];
+		$this->load->view('admin/header',
+			array(
+				'title' => $title." - 山西教育在线",
+				'showSider' => true,
+				'sider' => $sider,
+				'websiteName'=>"山西教育在线"
+			)
+		);
+		$this->load->view('admin/'.$view,$data);
+		$this->load->view('admin/footer');
+	}
 	public function index(){
-		$this->checkAdminLogin();
 		$data=array();
-		$this->load->view('admin/index',$data);
+		$this->adminBaseHandler('首页',array('index'=>true),'index',$data);
+	}
+	public function news(){
+		$data=array();
+		$this->adminBaseHandler('新闻管理',array('content'=>true,'news'=>true),'news',$data);
 	}
 	public function columnList(){
 		$data=array();

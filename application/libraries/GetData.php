@@ -129,6 +129,87 @@ class GetData{
 		);
 		return $page;
 	}
+	public function getEssays($parameters){
+		$condition=array(
+			'table'=>'essay',
+			'result'=>$parameters['result']
+		);
+		if(isset($parameters['column'])){
+			$condition['where']['column']=$parameters['column'];
+		}
+		if(isset($parameters['columns'])){
+			$condition['where_in']=array('column'=>$parameters['columns']);
+		}
+		if(isset($parameters['orderBy'])){
+			$condition['order_by']=$parameters['orderBy'];
+		}
+		if(isset($parameters['keywords'])){
+			$condition['like']=array('title'=>$parameters['keywords']);
+		}
+		if(isset($parameters['limit'])){
+			$condition['limit']=$parameters['limit'];
+		}
+		if(isset($parameters['time'])){
+			if(isset($parameters['time']['begin'])){
+				$condition['where']['time >=']=$parameters['time']['begin'];
+			}
+			if(isset($parameters['time']['end'])){
+				$condition['where']['time <=']=$parameters['time']['end'];
+			}
+		}
+		$essays=$this->getData($condition);
+		if($parameters['result']=='data'){
+			foreach ($essays as $key => $value) {
+				$value->columnName=$this->getContent('column',$value->column)->name;
+			}
+		}
+		return $essays;
+	}
+	public function getColumns($type,$isOnlyId){
+		switch ($type) {
+			case 'home'://首页
+				$columns = array(77,78,79,80,81);
+				break;
+			case 'news'://新闻
+				$columns = array(2,3,4,5,6,19,20,21,22,23,24,25,26);
+				break;
+			case 'edu'://教育
+				$columns = array(8,9,10,11,12,13,14,15,16,17,27,28,29,30);
+				break;
+			case 'area'://市县
+				$columns = array(31,32,33,34,35,36,37,38,39,40,41,42);
+				break;
+			case 'enrol'://招考
+				$columns = array(43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58);
+				break;
+			case 'school'://学校
+				$columns = array(60,61,62,63);
+				break;
+			case 'policy'://政策
+				$columns = array(65,66,67,68,69);
+				break;
+			case 'activity'://活动
+				$columns = array(70,71,72);
+				break;
+			case 'about'://关于
+				$columns = array(73,74,75);
+				break;
+			
+			default:
+				
+				break;
+		}
+		$returnData=array();
+		if($isOnlyId){
+			$returnData=$columns;
+		}else{
+			foreach ($columns as $value) {
+				$item=$this->getContent('column',$value);
+				$returnData[]=$item;
+			}
+		}
+		return $returnData;
+	}
 }
 
 /* End of file Common.php */

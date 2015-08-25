@@ -6,7 +6,7 @@ class Adminajax extends CI_Controller {
 		parent::__construct();
 		$this->load->helper("base");
 		$this->load->library('GetData');
-//		$this->load->model("Dbhandler");
+		$this->load->model("Dbhandler");
 		if(isset($_POST['data'])){
 			$this->_data=json_decode($_POST['data']);
 		}else{

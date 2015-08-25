@@ -26,54 +26,58 @@
     </div>
 	<div class="footer-ft">
 	    <div class="footer-ft-top">
-	    	<div class="swiperBanner">
-				<ul class="swiper-wrapper">
-					<li class="swiper-slide">
-						<div class="footer-ft-top-left">
-						    <h4 style="margin-top:10px; font-size:30px; text-align:center;">山西省</h4>
-						    <p style="margin-top:5px; font-size:30px; text-align:center;">全面深化基础教育教学改革创新项目</p>
-						    <h4 style="margin-top:5px; font-size:30px; text-align:center;">试点启动会</h4>
-							<p style="margin-top:15px; text-align:center;">为全面落实《山西省教育厅关于深化基础教育教学改革</p>
-							<p style="margin-top:5px; text-align:center;margin-left:-4px;">创新育人模式的意见》，2014年12月25日省教科院组</p>
-							<p style="margin-top:5px; margin-left:72px;">织召开了山西省···[详情]</p>
-							 <div style="clear:both;"></div>
-						</div>
-						<div class="footer-ft-top-right">
-						    <img src="/assets/images/14.png" style="width:460px; height:270px;"/>
-						</div>
-					</li>
-					<li class="swiper-slide">
-						<div class="footer-ft-top-left">
-						    <h4 style="margin-top:10px; font-size:30px; text-align:center;">山西省</h4>
-						    <p style="margin-top:5px; font-size:30px; text-align:center;">全面深化基础教育教学改革创新项目</p>
-						    <h4 style="margin-top:5px; font-size:30px; text-align:center;">试点启动会</h4>
-							<p style="margin-top:15px; text-align:center;">为全面落实《山西省教育厅关于深化基础教育教学改革</p>
-							<p style="margin-top:5px; text-align:center;margin-left:-4px;">创新育人模式的意见》，2014年12月25日省教科院组</p>
-							<p style="margin-top:5px; margin-left:72px;">织召开了山西省···[详情]</p>
-							 <div style="clear:both;"></div>
-						</div>
-						<div class="footer-ft-top-right">
-						    <img src="/assets/images/14.png" style="width:460px; height:270px;"/>
-						</div>
-					</li>
-					<li class="swiper-slide">
-						<div class="footer-ft-top-left">
-						    <h4 style="margin-top:10px; font-size:30px; text-align:center;">山西省</h4>
-						    <p style="margin-top:5px; font-size:30px; text-align:center;">全面深化基础教育教学改革创新项目</p>
-						    <h4 style="margin-top:5px; font-size:30px; text-align:center;">试点启动会</h4>
-							<p style="margin-top:15px; text-align:center;">为全面落实《山西省教育厅关于深化基础教育教学改革</p>
-							<p style="margin-top:5px; text-align:center;margin-left:-4px;">创新育人模式的意见》，2014年12月25日省教科院组</p>
-							<p style="margin-top:5px; margin-left:72px;">织召开了山西省···[详情]</p>
-							 <div style="clear:both;"></div>
-						</div>
-						<div class="footer-ft-top-right">
-						    <img src="/assets/images/14.png" style="width:460px; height:270px;"/>
-						</div>
-					</li>
-				</ul>
-				<div class="paginationBanner"></div>
-				<div class="banner-btn"><a href="">图说教育</a></div>
+	    	<div id="slideBox" class="slideBox">
+			<div class="hd">
+				<ul><li>1</li><li>2</li><li>3</li></ul>
 			</div>
+			<div class="bd">
+				<ul>
+					<li><a href="detail.html" target="_blank">
+						<div class="footer-ft-top-left">
+						    <h4 style="margin-top:10px; font-size:30px; text-align:center;">山西省</h4>
+						    <p style="margin-top:5px; font-size:30px; text-align:center;">全面深化基础教育教学改革创新项目</p>
+						    <h4 style="margin-top:5px; font-size:30px; text-align:center;">试点启动会</h4>
+							<p style="margin-top:15px; text-align:center;">为全面落实《山西省教育厅关于深化基础教育教学改革</p>
+							<p style="margin-top:5px; text-align:center;margin-left:-4px;">创新育人模式的意见》，2014年12月25日省教科院组</p>
+							<p style="margin-top:5px; margin-left:72px;">织召开了山西省···[详情]</p>
+							 <div style="clear:both;"></div>
+						</div>
+						<div class="footer-ft-top-right">
+						    <img src="/assets/images/75.png" style="width:460px; height:270px;"/>
+						</div>
+					</a></li>
+					<li><a href="detail.html" target="_blank">
+						<div class="footer-ft-top-left">
+						    <h4 style="margin-top:10px; font-size:30px; text-align:center;">山西省</h4>
+						    <p style="margin-top:5px; font-size:30px; text-align:center;">全面深化基础教育教学改革创新项目</p>
+						    <h4 style="margin-top:5px; font-size:30px; text-align:center;">试点启动会</h4>
+							<p style="margin-top:15px; text-align:center;">为全面落实《山西省教育厅关于深化基础教育教学改革</p>
+							<p style="margin-top:5px; text-align:center;margin-left:-4px;">创新育人模式的意见》，2014年12月25日省教科院组</p>
+							<p style="margin-top:5px; margin-left:72px;">织召开了山西省···[详情]</p>
+							 <div style="clear:both;"></div>
+						</div>
+						<div class="footer-ft-top-right">
+						    <img src="/assets/images/76.png" style="width:460px; height:270px;"/>
+						</div>
+					</a></li>
+					<li><a href="detail.html" target="_blank">
+						<div class="footer-ft-top-left">
+						    <h4 style="margin-top:10px; font-size:30px; text-align:center;">山西省</h4>
+						    <p style="margin-top:5px; font-size:30px; text-align:center;">全面深化基础教育教学改革创新项目</p>
+						    <h4 style="margin-top:5px; font-size:30px; text-align:center;">试点启动会</h4>
+							<p style="margin-top:15px; text-align:center;">为全面落实《山西省教育厅关于深化基础教育教学改革</p>
+							<p style="margin-top:5px; text-align:center;margin-left:-4px;">创新育人模式的意见》，2014年12月25日省教科院组</p>
+							<p style="margin-top:5px; margin-left:72px;">织召开了山西省···[详情]</p>
+							 <div style="clear:both;"></div>
+						</div>
+						<div class="footer-ft-top-right">
+						    <img src="/assets/images/14.png" style="width:460px; height:270px;"/>
+						</div>
+					</a></li>
+				</ul>
+			</div>
+
+		</div>
 		</div>
 		<div style="clear:both;"></div>
 	</div>
@@ -146,16 +150,19 @@
 				    </ul>
 				</div>
 				<div class="left-three-right">
-					<div class="swiperNews">
-					    <ul class="swiper-wrapper">
-					        <li class="swiper-slide"><img src="/assets/images/18.png"></li>
-					        <li class="swiper-slide"><img src="/assets/images/18.png"></li>
-					        <li class="swiper-slide"><img src="/assets/images/18.png"></li>
-					        <li class="swiper-slide"><img src="/assets/images/18.png"></li>
-					    </ul>
-					    <!-- 如果需要分页器 -->
-					    <div class="paginationNews"></div>
-					    
+					<div id="swiperNews" class="swiperNews">
+						<div class="hd">
+							<ul><li>1</li><li>2</li><li>3</li><li>4</li></ul>
+						</div>
+						<div class="bd">
+							<ul>
+								<li><a href="detail.html" target="_blank"><img src="/assets/images/18.png" width="308"/></a></li>
+								<li><a href="detail.html" target="_blank"><img src="/assets/images/18.png" width="308" /></a></li>
+								<li><a href="detail.html" target="_blank"><img src="/assets/images/18.png" width="308" /></a></li>
+								<li><a href="detail.html" target="_blank"><img src="/assets/images/18.png" width="308" /></a></li>
+							</ul>
+						</div>
+
 					</div>
 				</div>
 				<div style="clear:both;"></div>
@@ -317,43 +324,41 @@
 					    <a style="margin-left:150px;color:#0075a9;">[更多]</a>
 					</li>
 					<li style="padding:20px 20px;">
-						<div class="swiperSide">
-						    <ul class="swiper-wrapper">
-						        <li class="swiper-slide">
-						        	<a style="padding:0px 5px;"><img src="/assets/images/20.png"/></a>
-									<a><img src="/assets/images/21.png"/></a>
-						        </li>
-						        <li class="swiper-slide">
-						        	<a style="padding:0px 5px;"><img src="/assets/images/20.png"/></a>
-									<a><img src="/assets/images/21.png"/></a>
-						        </li>
-						        <li class="swiper-slide">
-						        	<a style="padding:0px 5px;"><img src="/assets/images/20.png"/></a>
-									<a><img src="/assets/images/21.png"/></a>
-						        </li>
-						        <li class="swiper-slide">
-						        	<a style="padding:0px 5px;"><img src="/assets/images/20.png"/></a>
-									<a><img src="/assets/images/21.png"/></a>
-						        </li>
-						        <li class="swiper-slide">
-						        	<a style="padding:0px 5px;"><img src="/assets/images/20.png"/></a>
-									<a><img src="/assets/images/21.png"/></a>
-						        </li>
-						        <li class="swiper-slide">
-						        	<a style="padding:0px 5px;"><img src="/assets/images/20.png"/></a>
-									<a><img src="/assets/images/21.png"/></a>
-						        </li>
-						        <li class="swiper-slide">
-						        	<a style="padding:0px 5px;"><img src="/assets/images/20.png"/></a>
-									<a><img src="/assets/images/21.png"/></a>
-						        </li>
-						        <li class="swiper-slide">
-						        	<a style="padding:0px 5px;"><img src="/assets/images/20.png"/></a>
-									<a><img src="/assets/images/21.png"/></a>
-						        </li>
-						    </ul>
-						    <!-- 分页器 -->
-						    <div class="paginationSide"></div>
+						<div class="picScroll-left">
+							<div class="hd">
+								<a class="next"></a>
+								<ul></ul>
+								<a class="prev"></a>
+								<span class="pageState"></span>
+							</div>
+							<div class="bd">
+								<ul class="picList">
+									<li>
+										<div class="pic"><a href="detail.html" target="_blank"><img src="/assets/images/20.png" /></a></div>
+										<div class="title"><a href="detail.html" target="_blank">效果图1</a></div>
+									</li>
+									<li>
+										<div class="pic"><a href="detail.html" target="_blank"><img src="/assets/images/20.png" /></a></div>
+										<div class="title"><a href="detail.html" target="_blank">效果图2</a></div>
+									</li>
+									<li>
+										<div class="pic"><a href="detail.html" target="_blank"><img src="/assets/images/20.png" /></a></div>
+										<div class="title"><a href="detail.html" target="_blank">效果图3</a></div>
+									</li>
+									<li>
+										<div class="pic"><a href="detail.html" target="_blank"><img src="/assets/images/20.png" /></a></div>
+										<div class="title"><a href="detail.html" target="_blank">效果图4</a></div>
+									</li>
+									<li>
+										<div class="pic"><a href="detail.html" target="_blank"><img src="/assets/images/20.png" /></a></div>
+										<div class="title"><a href="detail.html" target="_blank">效果图5</a></div>
+									</li>
+									<li>
+										<div class="pic"><a href="detail.html" target="_blank"><img src="/assets/images/20.png" /></a></div>
+										<div class="title"><a href="detail.html" target="_blank">效果图6</a></div>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</li>
 				</ul>
@@ -428,36 +433,11 @@
 <?php require('foot.php');?>
 </div>
 </body>
-<script src="/assets/plugins/swiper/swiper.min.js"></script>
-<script>
-var swiperBanner = new Swiper('.swiperBanner', {
-	autoplay: 2000,//可选选项，自动滑动
-	effect : 'fade',
-	fade: {
-	  crossFade: true,
-	},
-	pagination: '.paginationBanner',
-	paginationClickable: true,
-	paginationBulletRender: function (index, className) {
-		return '<span class="' + className + '">' + (index + 1) + '</span>';
-	}
-})
-var swiperNews = new Swiper('.swiperNews', {
-	autoplay: 2000,//可选选项，自动滑动
-	pagination: '.paginationNews',
-	paginationClickable: true,
-	paginationBulletRender: function (index, className) {
-		return '<span class="' + className + '">' + (index + 1) + '</span>';
-	}
-})
-var swiperSide = new Swiper('.swiperSide', {
-	autoplay: 2000,//可选选项，自动滑动
-	effect : 'fade',
-	fade: {
-	  crossFade: true,
-	},
-	pagination: '.paginationSide',
-	paginationClickable :true,
-})
+<script src="/assets/js/SuperSlide.js"></script>
+<script type="text/javascript">
+jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true,trigger:"click"});
+jQuery(".swiperNews").slide({mainCell:".bd ul",autoPlay:true,trigger:"click"});
+// jQuery(".picScroll-left").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:2,trigger:"click"});
+jQuery(".picScroll-left").slide({titCell:".hd ul",mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",vis:2,interTime:50,trigger:"click"});
 </script>
 </html>

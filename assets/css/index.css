@@ -5,6 +5,7 @@ button, input, select, textarea { /* for ie */
     /*font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
     font: 14px/1 "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
 }
+img{border: 0;}
 .header{background:#eeeeee;}
 .head-hd{width:960px; margin:0 auto; padding:5px 0;}
 .head-hd p{font-size:12px;color:#292929;}
@@ -17,6 +18,7 @@ button, input, select, textarea { /* for ie */
 .head-ct-right ul li a{padding:0 5px; color:#292929;}
 .head-ct-right input{background:#eeeeee; border:1px solid #d4d4d4; width:320px; height:30px; margin-top:5px;}
 .head-ct-right button{background:#eeeeee; width:68px; height:32px; border:1px solid #d4d4d4; margin-left:-4px;}
+.searchBox{height: 32px;padding-top: 5px;}
 
 .footer{background:#cde8f4; margin-top:10px;}
 .footer-hd{ width:960px; margin:0 auto;}
@@ -77,14 +79,43 @@ nav.nav li:hover>a{color: #fff;}
 .color>a{color: #0075a9;}
 .color>b{color: #0075a9;}
 
+
 /*swiper*/
-.swiperNews{width: 320px;overflow: hidden;border:1px solid #cecece;}
-.swiperBanner,.swiperNews,.swiperSide{position: relative;}
-.paginationBanner{position: absolute;bottom: 10px;z-index: 100;}
-.paginationSide{position: absolute;top: -35px;left: 52px;}
-.banner-btn{position: absolute;bottom: 10px;left: 368px;padding: 5px 15px;background-color: rgba(0,0,0,0.2);color: #fff;z-index: 100;}
-.banner-btn>a{color: #fff;}
-.swiperBanner .swiper-pagination-bullet,
-.swiperNews .swiper-pagination-bullet {width: 35px;height: 21px;color: #fff;line-height: 21px;border-radius: 0;text-align: center;}
+.slideBox{overflow:hidden; position:relative;height: 270px;}
+.slideBox .hd{ height:15px; overflow:hidden; position:absolute; left:5px; bottom:5px; z-index:1; }
+.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.slideBox .hd ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
+.slideBox .hd ul li.on{ background:#f00; color:#fff; }
+.slideBox .bd{ position:relative; height:270px; z-index:0;   }
+.slideBox .bd li{ zoom:1; vertical-align:middle; }
+.slideBox .bd img{ width:450px; height:230px; display:block;  }
+.swiperNews{position: relative;}
+.swiperNews .hd{height:15px; overflow:hidden; position:absolute; left:5px; bottom:5px; z-index:1;}
+.swiperNews .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.swiperNews .hd ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
+.swiperNews .hd ul li.on{ background:#f00; color:#fff; }
+.picScroll-left{overflow:hidden; position:relative;}
+.picScroll-left .hd{ overflow:hidden;  height:30px; background:#f4f4f4; padding:0 10px;  }
+.picScroll-left .hd .prev,.picScroll-left .hd .next{ display:block;  width:5px; height:9px; float:right; margin-right:5px; margin-top:10px;  overflow:hidden; cursor:pointer; background:url("../images/arrow.png") no-repeat;}
+.picScroll-left .hd .next{ background-position:0 -50px;  }
+.picScroll-left .hd .prevStop{ background-position:-60px 0; }
+.picScroll-left .hd .nextStop{ background-position:-60px -50px; }
+.picScroll-left .hd ul{ float:right; overflow:hidden; zoom:1; margin-top:10px; zoom:1; }
+.picScroll-left .hd ul li{ float:left;  width:9px; height:9px; overflow:hidden; margin-right:5px; text-indent:-999px; cursor:pointer; background:url("../images/icoCircle.gif") 0 -9px no-repeat; }
+.picScroll-left .hd ul li.on{ background-position:0 0; }
+.picScroll-left .bd{ padding:10px;   }
+.picScroll-left .bd ul{ overflow:hidden; zoom:1; }
+.picScroll-left .bd ul li{ margin:0 8px; float:left; _display:inline; overflow:hidden; text-align:center;  }
+.picScroll-left .bd ul li .pic{ text-align:center; }
+.picScroll-left .bd ul li .pic img{ width:120px; height:90px; display:block;  padding:2px; border:1px solid #ccc; }
+.picScroll-left .bd ul li .pic a:hover img{ border-color:#999;  }
+.picScroll-left .bd ul li .title{ line-height:24px;   }
+
 /*icon*/
 .labathree>i{position: absolute;top: 0px;left: 3px;}
+
+
+
+/*news*/
+.footer.news{background-color: #f8cfd2;}
+.news .active{background-color: #e60012;}

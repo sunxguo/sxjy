@@ -2,11 +2,11 @@
 	<ul class="summary-card row-fluid clearfix">
 		<li class="span3 text-center">
 			<h2>文章数量</h2>
-			<p class="summary-today-income">0</p>
+			<p class="summary-today-income"><?php echo $amount;?></p>
 		</li>
 		<li class="span3 text-center">
 			<h2>今天添加</h2>
-			<p class="summary-yesterday-income">0</p>
+			<p class="summary-yesterday-income"><?php echo $todayAmount;?></p>
 		</li>
 		<li class="span3 text-center">
 			<h2>用户数量</h2>
@@ -33,13 +33,16 @@
             </tr>
         </thead>
         <tbody>
+        	<?php foreach ($recentEssays as $value):?>
 			<tr>
-				<td>新闻</td>
+				<td><?php echo $value->columnName;?></td>
 				<td>
-					<a href="">饭发反反复复烦烦烦烦烦烦烦烦</a>
+					<a href=""><?php echo $value->title;?></a>
 				</td>
 				<td>管理员</td>
-				<td>2015-01-15</td>
+				<td><?php echo $value->time;?></td>
 			</tr>
+			<?php endforeach;?>
+		</tbody>
 	</table>
 </div>

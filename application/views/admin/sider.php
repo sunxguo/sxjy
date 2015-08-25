@@ -12,8 +12,8 @@
 				<span>内容管理</span>
 				<span class="btn-right sprite-ui"></span>
 			</a>
-			<ul class="nav <?php echo array_key_exists('content',$sider)?'':'hide';?>">
-				<li><a href="/admin/homepage" class="<?php echo array_key_exists('homepage',$sider)?'active':'';?>">首页</a></li>
+			<ul class="nav <?php echo array_key_exists('content',$sider)?'':'km-hide';?>">
+				<li><a href="/admin/home" class="<?php echo array_key_exists('home',$sider)?'active':'';?>">首页</a></li>
 				<li><a href="/admin/news" class="<?php echo array_key_exists('news',$sider)?'active':'';?>">新闻</a></li>
 				<li><a href="/admin/edu" class="<?php echo array_key_exists('edu',$sider)?'active':'';?>">教育</a></li>
 				<li><a href="/admin/area" class="<?php echo array_key_exists('area',$sider)?'active':'';?>">市县</a></li>
@@ -39,7 +39,7 @@
 				<span>系统设置</span>
 				<span class="btn-right sprite-ui"></span>
 			</a>
-			<ul class="nav <?php echo array_key_exists('system',$sider)?'':'hide';?>">
+			<ul class="nav <?php echo array_key_exists('system',$sider)?'':'km-hide';?>">
 				<li><a href="/admin/parameter" class="<?php echo array_key_exists('parameter',$sider)?'active':'';?>">基本参数</a></li>
 				<li><a href="/admin/log" class="<?php echo array_key_exists('log',$sider)?'active':'';?>">系统日志管理</a></li>
 				<li><a href="/admin/backup" class="<?php echo array_key_exists('backup',$sider)?'active':'';?>">数据库备份</a></li>

@@ -13,42 +13,70 @@ class Common extends CI_Controller {
 		$table="";
 		$data=json_decode($_POST['data']);
 		$info=array();
-		switch($_POST['info_type']){
-			case "column":
-				$table="column";
-				$info=array(
-					"column_fid"=>$data->fid,
-					"column_name"=>$data->name,
-					"column_display"=>$data->display,
-					"column_type"=>$data->type,
-					"column_ordernum"=>$data->order_num
-				);
-			break;
+		switch($data->infoType){
 			case "essay":
 				$table="essay";
 				$info=array(
 					"column"=>$data->column,
 					"title"=>$data->title,
-					"summay"=>$data->summay,
+					"summary"=>$data->summary,
 					"content"=>$data->content,
-					"thumbnail"=>$data->content,
+					"thumbnail"=>$data->thumbnail,
 					"author"=>1,
 					"time"=>date("Y-m-d H:i:s")
 				);
 			break;
 		}
-		echo json_encode(array("result"=>"success","message"=>"Successfully Modify!"));
+		$result=$this->dbHandler->insertData($table,$info);
+		if($result==1)echo json_encode(array("result"=>"success","message"=>"信息写入成功"));
+		else echo json_encode(array("result"=>"failed","message"=>"信息写入失败"));
+	}
+	public function modifyInfo(){
+		$table="";
+		$data=json_decode($_POST['data']);
+		$info=array();
+		$where=array();
+		switch($data->infoType){
+			case "essay":
+				$table="essay";
+				$where=array('id'=>$data->id);
+				$info=array(
+					"column"=>$data->column,
+					"title"=>$data->title,
+					"summary"=>$data->summary,
+					"content"=>$data->content,
+					"thumbnail"=>$data->thumbnail,
+					"time"=>date("Y-m-d H:i:s")
+				);
+			break;
+		}
+		$result=$this->dbHandler->updateData(array('table'=>$table,'where'=>$where,'data'=>$info));
+		if($result==1) echo json_encode(array("result"=>"success","message"=>"信息修改成功"));
+		else echo json_encode(array("result"=>"failed","message"=>"信息修改失败"));
+	}
+	public function deleteInfo(){
+		$condition=array();
+		$data=json_decode($_POST['data']);
+		switch($data->infoType){
+			case 'essay':
+				$condition['table']="essay";
+				$condition['where']=array("id"=>$data->id);
+			break;
+		}
+		$result=$this->dbHandler->deleteData($condition);
+		if($result==1) echo json_encode(array("result"=>"success","message"=>"信息删除成功"));
+		else echo json_encode(array("result"=>"failed","message"=>"信息删除失败"));
 	}
 	public function getInfo(){
 		$condition=array();
 		$data=json_decode($_POST['data']);
 		$result=array();
-		switch($_POST['info_type']){
-			case 'subCat':
-				$result=$this->commongetdata->getSubCat($data->id);
+		switch($data->infoType){
+			case 'essay':
+				$result=$this->getdata->getContent('essay',$data->id);
 			break;
 		}
-		echo json_encode(array("result"=>"success","message"=>$url));
+		echo json_encode(array("result"=>"success","message"=>$result));
 	}
 	public function uploadImage(){
 		$result=upload("image");

@@ -300,6 +300,9 @@ i, cite, em, var, address, dfn {
 .hide{
 	display:none;
 }
+.km-hide{
+	display:none;
+}
 .cms-main{
 	padding: 51px 0 0 200px;
 	min-height: 800px;
@@ -901,26 +904,43 @@ table.content thead th {
 table.content th {
     font-weight: bold;
 }
+table.content .data-item{
+	border-bottom: 1px solid #CCC;
+}
+table.content .data-item:hover{
+	background-color: #F6F6FF;
+}
+table.content .data-item.checked{
+	background-color: #FBE7E7;
+}
 .checker {
     position: relative;
     margin-right: 5px;
-    margin-top: -3px;
     margin-bottom: 0px !important;
     width: 19px;
     height: 19px;
 }
 .checker span{
+	/*
 	background-image: url(/assets/img/uniform/sprite.png);
     background-repeat: no-repeat;
     background-position: 0px -260px;
     height: 19px;
     width: 19px;
+    display: inline-block;
+    cursor: pointer;*/
 }
 .checker input {
-    opacity: 0;
+ /*   opacity: 0;
     filter: alpha(opacity:0);
     background: none;
     margin: 0px;
     width: 19px;
-    height: 19px;
+    height: 19px;*/
+}
+.checker input[type='checkbox'] {
+	 margin: 0px;
+	 width: 13px;
+	 height: 13px;
+	 cursor: pointer;
 }

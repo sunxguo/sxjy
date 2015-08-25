@@ -9,8 +9,9 @@
 	<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.css" type="text/css"/>
 	<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-theme.css" type="text/css"/>
     <script src="/assets/js/jquery.js" type="text/javascript"></script>
-	<script src="/assets/js/cms-common.js" type="text/javascript"></script>
+	<script src="/assets/js/common.js" type="text/javascript"></script>
 	<script src="/assets/js/cms.js" type="text/javascript"></script>
+	<script src="/assets/js/admin.js" type="text/javascript"></script>
 	<script src="/assets/js/jquery.form.js" type="text/javascript"></script>
 </head>
 <body>

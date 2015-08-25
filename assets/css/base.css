@@ -468,6 +468,14 @@ textarea {
 }
 #waitDiv{
 	display:none;
+	z-index: 10051;
+    width: 200px;
+    height: 100px;
+    line-height: 10px;
+    padding: 35px 0;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #FFF;
 }
 .btn-big {
 	display: inline-block;

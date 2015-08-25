@@ -3,7 +3,7 @@
 <meta charset="UTF-8">
 <title></title>
 <link rel="stylesheet" type="text/css" href="/assets/plugins/swiper/swiper.min.css">
-<link rel="stylesheet" href="/assets/css/denglu.css"/>
+<link rel="stylesheet" href="/assets/css/index.css"/>
 </head>
 <body>
 	<?php require('head.php');?>
@@ -78,15 +78,17 @@
 							<a style="padding:28px; background:url(/assets/images/11.png) no-repeat left center; color:#e60012;">即时新闻</a>
 							<a>太原市教育局：“小升初”新政有望5月出台&nbsp;&nbsp;&nbsp;&nbsp;太原市教育局：“小升初”新政有望5月出台</a>
 						</div>
-						<div class="swiperNews">
-						    <ul class="swiper-wrapper">
-						        <li class="swiper-slide"><img src="/assets/images/31.png" /></li>
-						        <li class="swiper-slide"><img src="/assets/images/31.png" /></li>
-						        <li class="swiper-slide"><img src="/assets/images/31.png" /></li>
-						    </ul>
-						    
-						    <!-- 滚动条 -->
-						    <div class="swiperNews-scrollbar"></div>
+						<div id="swiperNews" class="swiperNews">
+							<div class="hd">
+								<ul><li>1</li><li>2</li><li>3</li></ul>
+							</div>
+							<div class="bd">
+								<ul>
+									<li><a href="detail.html" target="_blank"><img src="/assets/images/31.png" /></a></li>
+									<li><a href="detail.html" target="_blank"><img src="/assets/images/31.png" /></a></li>
+									<li><a href="detail.html" target="_blank"><img src="/assets/images/31.png" /></a></li>
+								</ul>
+							</div>
 						</div>
 						<div style="margin-left:36px;">
 							<a style="color:#e60012">山西新闻</a>
@@ -332,18 +334,11 @@
 	<?php require('foot.php');?>
 	
 </body>
-<script src="/assets/plugins/swiper/swiper.min.js"></script>
-<script>
-var news = new Swiper('.swiperNews',{
-	autoplay: 5000,
-	scrollbar:'.swiperNews-scrollbar',
-})
-var newsRank = new Swiper('.newsRank', {
-	pagination: '.newsRank-pagination',
-	paginationClickable :true,
-	paginationBulletRender: function (index, className) {
-		return '<span class="' + className + '">' + '新闻评论排行' + '</span><span class="' + className + '">' + '今日点击排行' + '</span><span class="' + className + '">' + '一周点击排行' + '</span>';
-	}
-});  
+<script src="/assets/js/SuperSlide.js"></script>
+<script type="text/javascript">
+jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true,trigger:"click"});
+jQuery(".swiperNews").slide({mainCell:".bd ul",autoPlay:true,trigger:"click"});
+// jQuery(".picScroll-left").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:2,trigger:"click"});
+jQuery(".picScroll-left").slide({titCell:".hd ul",mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",vis:2,interTime:50,trigger:"click"});
 </script>
 </html>

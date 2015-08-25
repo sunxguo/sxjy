@@ -87,10 +87,13 @@ function getThumb(wraperId){
  * (object)postData
  * 默认值：callBack="NoCallBack",confirmMsg="NoConfirmation",refresh=false
  */
-function dataHandler(url,postDataObj,confirmMsg,cancelCallBack,successMsg,callBack,refresh){
+function dataHandler(url,postDataObj,confirmMsg,cancelCallBack,successMsg,callBack,refresh,ifShowWait){
 	if(confirmMsg && !confirm(confirmMsg)){
 		if(cancelCallBack) cancelCallBack();
 		return false;
+	}
+	if(ifShowWait){
+		showWait();
 	}
 	$.post(
 		url,
@@ -105,6 +108,9 @@ function dataHandler(url,postDataObj,confirmMsg,cancelCallBack,successMsg,callBa
 				if(refresh) location.reload();
 			}else{
 				alert(result.message);
+			}
+			if(ifShowWait){
+				closeWait();
 			}
 		});
 }

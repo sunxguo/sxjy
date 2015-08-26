@@ -27,3 +27,109 @@ ul.aboutMenu>li>label{padding: 8px 0;border: 1px solid #ccc;color: #078fc9;displ
 
 .swiper-enrol{width: 418px;overflow: hidden;}
 .swiper-school{width: 620px;overflow: hidden;}
+
+/*swiper*/
+.slideBox{overflow:hidden; position:relative;height: 270px;}
+.slideBox .hd{ height:15px; overflow:hidden; position:absolute; left:5px; bottom:5px; z-index:1; }
+.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.slideBox .hd ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
+.slideBox .hd ul li.on{ background:#f00; color:#fff; }
+.slideBox .bd{ position:relative; height:270px; z-index:0;   }
+.slideBox .bd li{ zoom:1; vertical-align:middle; }
+.slideBox .bd img{ width:450px; height:230px; display:block;  }
+.swiperNews{position: relative;}
+.swiperNews .hd{height:15px; overflow:hidden; position:absolute; left:5px; bottom:5px; z-index:1;}
+.swiperNews .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.swiperNews .hd ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
+.swiperNews .hd ul li.on{ background:#f00; color:#fff; }
+.picScroll-left{overflow:hidden; position:relative;}
+.picScroll-left .hd{ overflow:hidden;  height:30px; background:#f4f4f4; padding:0 10px;  }
+.picScroll-left .hd .prev,.picScroll-left .hd .next{ display:block;  width:5px; height:9px; float:right; margin-right:5px; margin-top:10px;  overflow:hidden; cursor:pointer; background:url("../images/arrow.png") no-repeat;}
+.picScroll-left .hd .next{ background-position:0 -50px;  }
+.picScroll-left .hd .prevStop{ background-position:-60px 0; }
+.picScroll-left .hd .nextStop{ background-position:-60px -50px; }
+.picScroll-left .hd ul{ float:right; overflow:hidden; zoom:1; margin-top:10px; zoom:1; }
+.picScroll-left .hd ul li{ float:left;  width:9px; height:9px; overflow:hidden; margin-right:5px; text-indent:-999px; cursor:pointer; background:url("../images/icoCircle.gif") 0 -9px no-repeat; }
+.picScroll-left .hd ul li.on{ background-position:0 0; }
+.picScroll-left .bd{ padding:10px;   }
+.picScroll-left .bd ul{ overflow:hidden; zoom:1; }
+.picScroll-left .bd ul li{ margin:0 8px; float:left; _display:inline; overflow:hidden; text-align:center;  }
+.picScroll-left .bd ul li .pic{ text-align:center; }
+.picScroll-left .bd ul li .pic img{ width:120px; height:90px; display:block;  padding:2px; border:1px solid #ccc; }
+.picScroll-left .bd ul li .pic a:hover img{ border-color:#999;  }
+.picScroll-left .bd ul li .title{ line-height:24px;   }
+
+/*icon*/
+.labathree>i{position: absolute;top: 0px;left: 3px;}
+
+
+
+/*news*/
+.footer.news{background-color: #f8cfd2;}
+.news .active{background-color: #e60012;}
+/*detail*/
+.wrapper{padding: 20px 10px;padding-bottom: 0;}
+.wrapper:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden}
+.detail_main{width: 660px;float: left;border: 1px solid #ccc;border-bottom: 0;padding: 12px;padding-bottom: 70px;}
+.detail_main h1{font-size: 24px;text-align: center;padding: 15px 0;}
+.detail_header_des{color: #999;text-align: center;border-bottom: 1px solid #eee;padding: 15px 0;}
+.detail_img_des{text-align: center;font-weight: bold;}
+.detail_text{margin-top: 50px;}
+.detail_text>p{text-indent: 35px;font-size: 16px;color: #666;line-height: 28px;}
+.detail_author{margin-top: 60px; font-size: 12px;color: #aaa;}
+.detail_side{width: 280px;float: left;margin-left: 12px;line-height: 24px;}
+.detail_side img{width: 100%;}
+.side_item{margin-top: 10px;border-top: 1px solid #d4d4d4;border-left: 1px solid #d4d4d4;}
+.side_item>dt{padding: 12px;background-color: #ebebeb;border-right: 1px solid #d4d4d4;border-bottom: 1px solid #d4d4d4;}
+.side_item>dd{border-right: 1px solid #d4d4d4;border-bottom: 1px solid #d4d4d4;padding: 12px;}
+.side_main{border-bottom: 1px solid #d4d4d4;}
+.side_main>h1{padding: 10px 0;font-size: 24px;width: 100%;color: #608ab4;}
+.side_main>p{text-indent: 30px;color: #555;}
+.side_list,.side_list>li{list-style-type: disc;padding-left: 10px;}
+.side_list a{color: #555;}
+/*swiper*/
+.slideTxtBox{ border:1px solid #ddd; text-align:left;padding: 10px 0;}
+.slideTxtBox .hd{line-height:30px;padding:0 20px;position:relative; width: 100px;float: left;}
+.slideTxtBox .hd ul li{padding: 8px 0;border: 1px solid #ccc;color: #078fc9;display: block;width: 100px;text-align: center;margin-bottom: 10px;cursor: pointer;}
+.slideTxtBox .hd ul li.on{ color: #fff;background: #078fc9; }
+.slideTxtBox .bd div{ padding: 50px 108px;  zoom:1;width: 640px;float: left;line-height: 28px;border-left: 1px solid #ccc;}
+.slideTxtBox .bd div h2{font-size: 18px;font-weight: bold;margin: 20px 0;}
+/*user*/
+.tableText .hd{line-height:30px;position:relative; width: 180px;float: left;background-color: #cde9f4;text-align: center;}
+.tableText .hd div{background-color: #078fc9;color: #fff;padding: 8px}
+.tableText .hd ul{border-top: 1px solid #078fc9;border-left: 1px solid #078fc9;}
+.tableText .hd ul li{padding: 8px 0;border-right: 1px solid #078fc9;border-bottom: 1px solid #078fc9;display: block;cursor: pointer;}
+.tableText .hd ul li.on{background: #fff; }
+.tableText .bd{width: 820px;float: left;}
+.tableText .bd>div{ padding: 0 108px;  zoom:1;width: 600px;float: left;line-height: 28px;}
+.tableText .bd div h2{font-size: 18px;font-weight: bold;margin: 20px 0;}
+.admin_info_top{background-color: #ccc;padding: 5px 12px;}
+.admin_info_top>button{padding: 5px;margin-left: 15px;}
+.admin_info_head{padding: 10px 0;position: relative;border-bottom: 12px solid #ccc;}
+.inputfile{position: absolute;left: 200px;bottom: 15px;z-index: 100;height: 35px;width: 120px;opacity: 0;}
+.inputfile_btn{background-color: #ccc;border-radius: 6px;width: 120px;text-align: center;line-height: 35px;position: absolute;left: 200px;bottom: 15px;}
+.tableText .bd ul li{border-bottom: 1px solid #ccc;line-height: 50px;}
+.tableText .bd ul li>span{width: 80px;display: inline-block;text-align: center;}
+.tableText .bd ul li>a{display: block;padding: 0 12px;}
+.tableText .bd ul li input{border: 1px solid #eee;padding: 8px;}
+.tableText .bd ul li.ps input{width: 480px;}
+.textMain>span{float: left;}
+.textMain>textarea{float: left;width: 496px;margin: 8px 0;resize:none;height: 60px;}
+.textCon>span{float: left;}
+.textCon>textarea{float: left;width: 496px;margin: 8px 0;resize:none;height: 150px;}
+.tableText .bd div ul li p{line-height: 20px;}
+.tableText .QA>button{margin: 5px;padding: 3px 12px;cursor: pointer;}
+.tableText .QA>a{background-color: #e3e3e3;padding: 3px 12px;border: 1px solid #333;}
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.slideTxtBox .arrow{  position:absolute; right:10px; top:0; }
+.slideTxtBox .arrow a{ display:block;  width:5px; height:9px; float:right; margin-right:5px; margin-top:10px;  overflow:hidden;
+	 cursor:pointer; background:url("../images/arrow.png") 0 0 no-repeat; }
+.slideTxtBox .arrow .next{ background-position:0 -50px;  }
+.slideTxtBox .arrow .prevStop{ background-position:-60px 0; }
+.slideTxtBox .arrow .nextStop{ background-position:-60px -50px; }
+
+/*user*/
+.curmb{padding: 15px 0;}
+.curmb>a{padding: 0 12px;}
+#preview img{width: 180px;height: 180px;}

@@ -63,7 +63,7 @@
 	</div>
 	<div>
 		<div style="margin:0 auto; width:1000px;">
-			<div style="border:1px solid #d4d4d4; height:1125px; margin-top:20px;">
+			<div style="border:1px solid #d4d4d4; height:1225px; margin-top:20px;">
 				<div style="background:#eeeeee; width:960px; height:320px; margin:20px;">
 					<ul>
 						<li style="float:left;">

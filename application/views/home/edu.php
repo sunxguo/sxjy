@@ -74,7 +74,7 @@
 			</div>
 	</div>
 	<div>
-		<div style="width:1000px; margin:0 auto; border:1px solid #d4d4d4; height:1510px; margin-top:40px;">
+		<div style="width:1000px; margin:0 auto; border:1px solid #d4d4d4; margin-top:40px;">
 			<div style="padding:30px 20px;">
 				<div style="float:left; width:640px">
 					<div>
@@ -228,7 +228,7 @@
 				</div>
 				<div style="float:right; width:300px;">
 					<div style="padding:10px 10px; border:1px solid #d4d4d4; margin:0 auto;">
-						<div style="width:280px;height:700px; border:1px solid #d4d4d4; margin:0 auto; background:#eeeeee;">
+						<div style="width:280px;border:1px solid #d4d4d4; margin:0 auto; background:#eeeeee;">
 							<div style="background:#d2d2d2">
 								<p style="padding:10px 15px;">公示公告</p>
 							</div>

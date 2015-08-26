@@ -4,6 +4,33 @@
 <title></title>
 <link rel="stylesheet" type="text/css" href="/assets/plugins/swiper/swiper.min.css">
 <link rel="stylesheet" href="/assets/css/denglu.css"/>
+		<style type="text/css">
+		/* css 重置 */
+		*{margin:0; padding:0; list-style:none; }
+		body{ background:#fff; font:normal 12px/22px 宋体;  }
+		img{ border:0;  }
+		a{ text-decoration:none; color:#333;  }
+
+		/* 本例子css */
+		.slideBox{ width:450px; height:230px; overflow:hidden; position:relative; border:1px solid #ddd;  }
+		.slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:5px; bottom:5px; z-index:1; }
+		.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+		.slideBox .hd ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
+		.slideBox .hd ul li.on{ background:#f00; color:#fff; }
+		.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+		.slideBox .bd li{ zoom:1; vertical-align:middle; }
+		.slideBox .bd img{ width:450px; height:230px; display:block;  }
+
+		/* 下面是前/后按钮代码，如果不需要删除即可 */
+		.slideBox .prev,
+		.slideBox .next{ position:absolute; left:3%; top:50%; margin-top:-25px; display:block; width:32px; height:40px; background:url(images/slider-arrow.png) -110px 5px no-repeat; filter:alpha(opacity=50);opacity:0.5;   }
+		.slideBox .next{ left:auto; right:3%; background-position:8px 5px; }
+		.slideBox .prev:hover,
+		.slideBox .next:hover{ filter:alpha(opacity=100);opacity:1;  }
+		.slideBox .prevStop{ display:none;  }
+		.slideBox .nextStop{ display:none;  }
+
+		</style>
 </head>
 <body>
 	<?php require('head.php');?>
@@ -71,21 +98,26 @@
 			<img src="/assets/images/68.png" style="padding:20px 0;"/>
 			<div>
 				<div style="float:left;">
-					<div class="swiper-enrol">
-						<ul class="swiper-wrapper">
-							<li class="swiper-slide"><img src="/assets/images/69.png" /></li>
-							<li class="swiper-slide"><img src="/assets/images/69.png" /></li>
-							<li class="swiper-slide"><img src="/assets/images/69.png" /></li>
-						</ul>
+					<div id="slideBox" class="slideBox">
+						<div class="hd">
+							<ul><li>1</li><li>2</li><li>3</li></ul>
+						</div>
+						<div class="bd">
+							<ul>
+								<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="/assets/images/73.png" /></a></li>
+								<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="/assets/images/83.png" /></a></li>
+								<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="/assets/images/74.png" /></a></li>
+							</ul>
+						</div>
 					</div>
-					<div style="border:1px solid #d4d4d4; height:118px; margin-top:20px;">
+					<div style="border:1px solid #d4d4d4;  margin-top:20px;">
 						<p style="padding:20px 35px; font-size:18px; color:#0075a9;">成绩查询入口</p>
 						<div style="padding:10px 35px;">
 							<a style="background:#4cc2c4; padding:10px 20px; color:#ffffff; border-radius:5px;">高考成绩查询入口</a>
 							<a style="background:#4cc2c4; padding:10px 20px; color:#ffffff; border-radius:5px; margin-left:35px;">中考成绩查询入口</a>
 						</div>
 					</div>
-					<div style="border:1px solid #d4d4d4; height:240px; margin-top:20px;">
+					<div style="border:1px solid #d4d4d4; margin-top:20px;">
 						<div style="padding:20px 20px;">
 							<ul>
 								<li style="float:left;">
@@ -211,7 +243,7 @@
 							<p style="padding:5px 0;">【地市动态】中国人才无端消耗：本科生端盘子 博士生跑销售</p>
 						</div>
 						<img src="/assets/images/70.png" style="padding-top:30px;"/>
-						<div style="border:1px solid #d4d4d4; height:240px; margin-top:20px;">
+						<div style="border:1px solid #d4d4d4; margin-top:20px;">
 							<div style="padding:20px 25px;">
 								<ul>
 									<li style="float:left;">
@@ -233,7 +265,7 @@
 								</div>
 							</div>
 						</div>
-						<div style="border:1px solid #d4d4d4; height:1050px; margin-top:20px;">
+						<div style="border:1px solid #d4d4d4; margin-top:20px;">
 							<div style="padding:20px 25px;">
 								<ul>
 									<li style="float:left;">
@@ -337,10 +369,8 @@
 	</div>
 	<?php require('foot.php');?>
 </body>
-<script src="/assets/plugins/swiper/swiper.min.js"></script>
-<script> 
-var enrol = new Swiper('.swiper-enrol', {
-	autoplay: 5000,//可选选项，自动滑动
-})
+<script src="/assets/js/SuperSlide.js"></script>
+<script type="text/javascript">
+jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
 </script>
 </html>

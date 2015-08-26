@@ -3,7 +3,7 @@
 <meta charset="UTF-8">
 <title></title>
 <link rel="stylesheet" type="text/css" href="/assets/plugins/swiper/swiper.min.css">
-<link rel="stylesheet" href="/assets/css/index.css"/>
+<link rel="stylesheet" href="/assets/css/denglu.css"/>
 </head>
 <body>
 	<?php require('head.php');?>

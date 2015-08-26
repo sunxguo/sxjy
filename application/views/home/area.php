@@ -75,15 +75,18 @@
 			</div>
 	</div>
 	<div style="background:url(/assets/images/63.png); height:426px;">
-		<div class="areaBanner">
-			<ul class="swiper-wrapper">
-				<li class="swiper-slide"><img src="/assets/images/59.png" /></li>
-				<li class="swiper-slide"><img src="/assets/images/59.png" /></li>
-				<li class="swiper-slide"><img src="/assets/images/59.png" /></li>
-			</ul>
-			<!-- 导航按钮 -->
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-button-next"></div>
+		
+		<div id="swiperNews" class="swiperNews areaBanner">
+			<div class="hd">
+				<ul><li>1</li><li>2</li><li>3</li></ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<li><a href="detail.html" target="_blank"><img src="/assets/images/59.png" /></a></li>
+					<li><a href="detail.html" target="_blank"><img src="/assets/images/59.png" /></a></li>
+					<li><a href="detail.html" target="_blank"><img src="/assets/images/59.png" /></a></li>
+				</ul>
+			</div>
 		</div>
 		<!-- <div style="background:url(/assets/images/59.png); height:426px; margin:0 auto; width:1000px;"></div> -->
 	</div>
@@ -229,7 +232,7 @@
 	<div>
 		<div style="width:1000px; margin:0 auto;">
 			<div style="float:left;">
-				<div style="width:304px; border:2px solid #d4d4d4; height:520px;">
+				<div style="width:304px; border:2px solid #d4d4d4;">
 					<div style="padding:10px 10px; font-size:18px;">
 						<p>图文动态</p>
 						<div style="border-top:1px dashed #d4d4d4; margin-top:10px;"></div>
@@ -398,13 +401,8 @@
 	</div>
 	<?php require('foot.php');?>
 </body>
-<script src="/assets/plugins/swiper/swiper.min.js"></script>
-<script>
-var areaBanner = new Swiper('.areaBanner', {
-	autoplay: 5000,//可选选项，自动滑动
-	prevButton:'.swiper-button-prev',
-	nextButton:'.swiper-button-next',
-})
-</script>
+<script src="/assets/js/SuperSlide.js"></script>
+<script type="text/javascript">
+jQuery(".swiperNews").slide({mainCell:".bd ul",autoPlay:true,trigger:"click"});
 </script>
 </html>

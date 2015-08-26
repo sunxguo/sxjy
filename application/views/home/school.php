@@ -64,14 +64,19 @@
 		<div style="margin:0 auto; width:1000px;">
 			<div style="padding:20px 0">
 				<div style="float:left; width:620px;">
-					<div class="swiper-school">
-						<ul class="swiper-wrapper">
-							<li class="swiper-slide"><img src="/assets/images/73.png" alt="" /></li>
-							<li class="swiper-slide"><img src="/assets/images/73.png" alt="" /></li>
-							<li class="swiper-slide"><img src="/assets/images/73.png" alt="" /></li>
-						</ul>
+					<div id="swiperNews" class="swiperNews">
+						<div class="hd">
+							<ul><li>1</li><li>2</li><li>3</li></ul>
+						</div>
+						<div class="bd">
+							<ul>
+								<li><a href="detail.html" target="_blank"><img src="/assets/images/31.png" /></a></li>
+								<li><a href="detail.html" target="_blank"><img src="/assets/images/31.png" /></a></li>
+								<li><a href="detail.html" target="_blank"><img src="/assets/images/31.png" /></a></li>
+							</ul>
+						</div>
 					</div>
-					<div style="border:1px solid #d4d4d4; height:650px; margin-top:20px;">
+					<div style="border:1px solid #d4d4d4; height:750px; margin-top:20px;">
 						<div style="background:#eeeeee; height:54px;">
 							<div style="padding:16px 30px;">
 								<p style="border:4px solid #008b5d; width:80px; text-align:center; padding:10px 5px; border-bottom:none; color:#008b5d;">最新动态</p>
@@ -169,10 +174,8 @@
 	</div>
 	<?php require('foot.php');?>
 </body>
-<script src="/assets/plugins/swiper/swiper.min.js"></script>
-<script> 
-var school = new Swiper('.swiper-school', {
-	autoplay: 5000,//可选选项，自动滑动
-})
+<script src="/assets/js/SuperSlide.js"></script>
+<script type="text/javascript">
+jQuery(".swiperNews").slide({mainCell:".bd ul",autoPlay:true,trigger:"click"});
 </script>
 </html>

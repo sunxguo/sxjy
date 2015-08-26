@@ -10,7 +10,7 @@
 <div class="head">
 	<?php require('head.php');?>
     <div class="footer">
-        <nav class="footer-hd nav">
+        <div class="footer-hd nav">
         	<ul class="clearfix">
         		<li class="active"><a>首页</a></li>
         		<li><a href="/home/news">新闻</a></li>
@@ -22,7 +22,7 @@
         		<li><a href="/home/active">活动</a></li>
         		<li><a href="/home/about">关于</a></li>
         	</ul>
-	    </nav>
+	    </div>
     </div>
 	<div class="footer-ft">
 	    <div class="footer-ft-top">
@@ -433,6 +433,7 @@
 <?php require('foot.php');?>
 </div>
 </body>
+<script src="http://libs.baidu.com/jquery/1.4.2/jquery.min.js"></script>
 <script src="/assets/js/SuperSlide.js"></script>
 <script type="text/javascript">
 jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true,trigger:"click"});

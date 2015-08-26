@@ -1,4 +1,4 @@
-<script type="text/javascript" src="/assets/js/jquery-2.1.4.min.js"></script>
+<script src="http://libs.baidu.com/jquery/1.4.2/jquery.min.js"></script>
 <div>
 	<div style="height:30px; background:#eeeeee;">
 		<div style="width:1000px; padding:8px 0;margin:0 auto; text-align:left;">
@@ -37,16 +37,16 @@
 	</div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){
-	$.get(
+jQuery(document).ready(function(){
+	jQuery.get(
 	"/common/getWeather",
 	{},
 	function(data){
-		var result=$.parseJSON(data);
+		var result=jQuery.parseJSON(data);
 		var weatherinfo=result.weatherinfo;
-		$("#weather").text(weatherinfo.weather);
-		$("#temp1").text(weatherinfo.temp1);
-		$("#temp2").text(weatherinfo.temp2);
+		jQuery("#weather").text(weatherinfo.weather);
+		jQuery("#temp1").text(weatherinfo.temp1);
+		jQuery("#temp2").text(weatherinfo.temp2);
 	});
 });
 </script>

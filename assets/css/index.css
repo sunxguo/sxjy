@@ -69,12 +69,12 @@ img{border: 0;}
    ========================================================================== */
 .clearfix:after { content: "."; display: block; height:   0; clear: both; visibility: hidden }
 i{font-size: 150%;color: #0075A9;}
-nav li>a {display: block;}
-nav.nav>ul>li{float: left;width: 11%;text-align: center;padding: 13px 0;}
+.nav li>a {display: block;}
+.nav>ul>li{float: left;width: 11%;text-align: center;padding: 13px 0;}
 .active{background:#0075a9;}
 .active a{color: #fff;}
-nav.nav li:hover{background: #0075a9;}
-nav.nav li:hover>a{color: #fff;}
+.nav li:hover{background: #0075a9;}
+.nav li:hover>a{color: #fff;}
 .f12{font-size: 12px;}
 .color>a{color: #0075a9;}
 .color>b{color: #0075a9;}

@@ -76,7 +76,7 @@
 					<div style="clear:both;"></div>
 				</ul>
 				<img src="/assets/images/68.png"/>
-				<div style="border:1px solid #d4d4d4; height:560px; margin-top:20px;">
+				<div style="border:1px solid #d4d4d4; margin-top:20px;">
 					<div style="padding:20px 30px;"> 
 						<ul>
 							<li style="float:left;"><p style="font-size:18px; color:#008cc8; padding:15px 0;">高招扶贫要防止造成新的不公</p></li>
@@ -123,7 +123,7 @@
 					</li>
 					<div style="clear:both;"></div>
 				</ul>
-				<div style="border:1px solid #d4d4d4; height:380px;">
+				<div style="border:1px solid #d4d4d4;">
 					<div style="padding:20px 30px;"> 
 						<ul>
 							<li style="float:left;"><p style="font-size:18px; color:#008cc8; padding:15px 0;">高招扶贫要防止造成新的不公</p></li>

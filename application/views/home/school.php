@@ -106,7 +106,7 @@
 					</div>
 				</div>
 				<div style="float:right;">
-					<div style="border:1px solid #d4d4d4; height:380px; width:340px; border-left:none; border-right:none;">
+					<div style="border:1px solid #d4d4d4; width:340px; border-left:none; border-right:none;">
 						<div style="text-align:center; padding:20px 0;">
 							<a style="padding:10px 30px;">管 理</a>
 							<a style="border:4px solid #008b5d; border-bottom:none; padding:10px 20px;">教科研</a>

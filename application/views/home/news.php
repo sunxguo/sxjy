@@ -2,7 +2,6 @@
 <head>
 <meta charset="UTF-8">
 <title>新闻</title>
-<link rel="stylesheet" type="text/css" href="plugins/icomoon/style.css">
 <link rel="stylesheet" href="/assets/css/index.css"/>
 </head>
 <body>
@@ -12,14 +11,14 @@
 	        <div class="footer-hd nav">
 	        	<ul class="clearfix">
 	        		<li><a>首页</a></li>
-	        		<li class="active"><a href="news.html">新闻</a></li>
-	        		<li><a href="edu.html">教育</a></li>
-	        		<li><a href="area.html">市县</a></li>
-	        		<li><a href="enrol.html">招考</a></li>
-	        		<li><a href="school.html">学校</a></li>
-	        		<li><a href="policy.html">政策</a></li>
-	        		<li><a href="active.html">活动</a></li>
-	        		<li><a href="about.html">关于</a></li>
+	        		<li class="active"><a href="/home/news">新闻</a></li>
+	        		<li><a href="/home/edu">教育</a></li>
+	        		<li><a href="/home/area">市县</a></li>
+	        		<li><a href="/home/enrol">招考</a></li>
+	        		<li><a href="/home/school">学校</a></li>
+	        		<li><a href="/home/policy">政策</a></li>
+	        		<li><a href="/home/active">活动</a></li>
+	        		<li><a href="/home/about">关于</a></li>
 	        	</ul>
 		    </div>
 	    </div>
@@ -71,7 +70,7 @@
 								</ul>
 							</div>
 						</div>
-						<div style="margin-left:36px;">
+						<div style="margin-left:36px;margin-top: 20px;">
 							<a style="color:#e60012">山西新闻</a>
 							<a style="margin-left:10px;"><img src="/assets/images/42.png"/></a>
 							<ul style="margin-left:5px; padding:15px 0;">
@@ -150,64 +149,6 @@
 							    <ul class="swiper-wrapper">
 							        <li class="swiper-slide">
 							        	<div style="padding:20px 10px;">
-											<ul>
-												<li style="padding:10px 0;">
-													<a>1· 一模过后如何成为黑马</a>
-												</li>
-												<div style="border-top:1px solid #d4d4d4;"></div>
-												<li style="padding:10px 0;">
-													<a>2· 文科就业率高的十大专业</a>
-												</li>
-												<div style="border-top:1px solid #d4d4d4;"></div>
-												<li style="padding:10px 0;">
-													<a>3· 高考改革不是学科的“排列组合”</a>
-												</li>
-												<div style="border-top:1px solid #d4d4d4;"></div>
-												<li style="padding:10px 0;">
-													<a>4· 现在的语文课一半内容不该学</a>
-												</li>
-												<div style="border-top:1px solid #d4d4d4;"></div>
-												<li style="padding:10px 0;">
-													<a>5· 理科就业率高的十大专业</a>
-												</li>
-												<div style="border-top:1px solid #d4d4d4;"></div>
-												<li style="padding:10px 0;">
-													<a>6· 如何选择适合自己的</a>
-												</li>	
-											</ul>
-										</div>
-							        </li>
-							        <li class="swiper-slide">
-										<div style="padding:20px 10px;">
-											<ul>
-												<li style="padding:10px 0;">
-													<a>1· 一模过后如何成为黑马</a>
-												</li>
-												<div style="border-top:1px solid #d4d4d4;"></div>
-												<li style="padding:10px 0;">
-													<a>2· 文科就业率高的十大专业</a>
-												</li>
-												<div style="border-top:1px solid #d4d4d4;"></div>
-												<li style="padding:10px 0;">
-													<a>3· 高考改革不是学科的“排列组合”</a>
-												</li>
-												<div style="border-top:1px solid #d4d4d4;"></div>
-												<li style="padding:10px 0;">
-													<a>4· 现在的语文课一半内容不该学</a>
-												</li>
-												<div style="border-top:1px solid #d4d4d4;"></div>
-												<li style="padding:10px 0;">
-													<a>5· 理科就业率高的十大专业</a>
-												</li>
-												<div style="border-top:1px solid #d4d4d4;"></div>
-												<li style="padding:10px 0;">
-													<a>6· 如何选择适合自己的</a>
-												</li>	
-											</ul>
-										</div>
-							        </li>
-							        <li class="swiper-slide">
-										<div style="padding:20px 10px;">
 											<ul>
 												<li style="padding:10px 0;">
 													<a>1· 一模过后如何成为黑马</a>

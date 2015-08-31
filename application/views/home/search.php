@@ -17,7 +17,7 @@
 					</li>
 					<div style="clear:both;"></div>
 				</ul>
-				<div style="border:1px solid #d4d4d4; height:1180px;">
+				<div style="border:1px solid #d4d4d4;">
 					<div style="padding:10px 30px; margin-top:20px;"> 
 						<ul>
 							<li style="float:left;"><p style="font-size:18px; color:#008cc8; padding:5px 0;">·  大学是中美人文交流的先行者</p></li>

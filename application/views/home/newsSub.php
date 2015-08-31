@@ -2,45 +2,27 @@
 <head>
 <meta charset="UTF-8">
 <title></title>
-<link rel="stylesheet" href="/assets/css/denglu.css"/>
+<link rel="stylesheet" href="/assets/css/index.css"/>
 <link rel="stylesheet" type="text/css" href="/assets/plugins/JqueryPagination/jquery.pagination.css">
 </head>
 <body>
 	<?php require('head.php');?>
 	<div>
-		<div style="background:#f8cfd2; height:40px;">
-			<div style="width:1000px; margin:0 auto;">
-			    <ul style="float:left;text-align:center;">
-					<li style="float:left; padding:11px 0; width:100px;">
-						<a  href="/" style="font-size:14px; ">首页</a>
-					</li>
-					<li style="float:left; padding:11px 0; width:100px; background:#e62232;">
-						<a style="font-size:14px; color:#ffffff;">新闻</a>
-					</li>
-					<li style="float:left; padding:11px 0; width:100px;">
-						<a href="/home/edu" style="font-size:14px;">教育</a>
-					</li>
-					<li style="float:left; padding:11px 0; width:100px;">
-						<a href="/home/area" style="font-size:14px;">市县</a>
-					</li>
-					<li style="float:left; padding:11px 0; width:100px;">
-						<a href="/home/enrol" style="font-size:14px;">招考</a>
-					</li>
-					<li style="float:left; padding:11px 0; width:100px;">
-						<a href="/home/school" style="font-size:14px;">学校</a>
-					</li>
-					<li style="float:left; padding:11px 0; width:100px;">
-						<a href="/home/policy" style="font-size:14px;">政策</a>
-					</li>
-					<li style="float:left; padding:11px 0; width:100px;">
-						<a href="/home/active" href="active.html" style="font-size:14px;">活动</a>
-					</li>
-					<li style="float:left; padding:11px 0; width:100px;">
-						<a href="/home/about" href="about.html" style="font-size:14px;">关于</a>
-					</li>
-					<div style="clear:both;"></div>
-				</ul>
-		    </div>			
+		<div class="footer news">
+	        <div class="footer-hd nav">
+	        	<ul class="clearfix">
+	        		<li><a>首页</a></li>
+	        		<li class="active"><a href="/home/news">新闻</a></li>
+	        		<li><a href="/home/edu">教育</a></li>
+	        		<li><a href="/home/area">市县</a></li>
+	        		<li><a href="/home/enrol">招考</a></li>
+	        		<li><a href="/home/school">学校</a></li>
+	        		<li><a href="/home/policy">政策</a></li>
+	        		<li><a href="/home/active">活动</a></li>
+	        		<li><a href="/home/about">关于</a></li>
+	        	</ul>
+		    </div>
+	    </div>		
 		</div>
 		<div style="background:#e60012; height:48px;">
 			<div style="width:1000px; margin:0 auto;">

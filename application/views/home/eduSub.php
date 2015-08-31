@@ -84,7 +84,7 @@
 			</ul>
 			<div style="padding:0 30px;">
 				<img src="/assets/images/82.png"/>
-				<div style="border:1px solid #d4d4d4; height:880px; margin:20px 0;">
+				<div style="border:1px solid #d4d4d4; margin:20px 0;">
 					<ul style="padding:10px 20px; margin-top:10px;">
 						<li style="float:left;"><img src="/assets/images/83.png"/></li>
 						<li style="float:left; padding:5px 30px;">

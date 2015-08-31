@@ -69,8 +69,8 @@
 					</li>
 					<div style="clear:both;"></div>
 				</ul>
-				<div style="border:1px solid #d4d4d4; height:700px;">
-					<div style="height:54px; background:#eeeeee;">
+				<div style="border:1px solid #d4d4d4; ">
+					<div style="background:#eeeeee;">
 						<div style="padding:16px 30px;">
 							<p style="border:4px solid #008b5d; width:80px; text-align:center; padding:10px 5px; border-bottom:none; color:#008b5d;">管&nbsp;&nbsp;&nbsp;&nbsp;理</p>
 						</div>
@@ -189,7 +189,7 @@
 						</div>
 					</div>
 				</div>
-				<div style="background:#eeeeee; height:42px;margin-top:20px;">
+				<div style="background:#eeeeee; margin-top:20px;">
 					<ul style="padding:8px 250px;">
 						<li style="width:40px; height:24px; background:#1b9770; border-radius:4px; float:left; text-align:center; line-height:24px; color:#ffffff;margin:0 10px;">《</li>
 						<li style="float:left; text-align:center; line-height:24px;">

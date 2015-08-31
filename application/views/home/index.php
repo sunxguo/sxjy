@@ -387,51 +387,49 @@
 			</div>
 		</div>
 	</div>
-	<div style="clear:both;"></div>
-	<div style="margin-top:80px; ">
-    <div style="background:#33a3d3; width:960px; height:185px; margin:0 auto;" class="qwe">
+	<div style="clear:both;width:0px;height:0px;"></div>
+    <div style="background:#33a3d3; width:960px; margin:0 auto;" class="qwe">
 	    <ul>
-		<li style="border-bottom:1px solid #ffffff;">
-		    <a>特别连接</a>
-			<a style="margin-left:20px;">区县</a>
-			<a style="margin-left:20px;">市教委直属单位</a>
-			<a style="margin-left:20px;">高校</a>	
-			<a style="margin-left:20px;">中小幼及职校</a>	
-			<a style="margin-left:20px;">友情链接</a>	
-		</li>
-		<li>
-		    <a>教育部</a>
-			<a style="margin-left:100px;">山西教育</a>
-			<a style="margin-left:100px;">山西中小学德育网</a>
-			<a style="margin-left:100px;">山西学前教育网</a>	
-			<a style="margin-left:100px;">山西基础教育信息网</a>	
-		</li>
-		<li>
-		    <a>职称教育在线</a>
-			<a style="margin-left:58px;">山西终身学习网</a>
-			<a style="margin-left:60px;">高校毕业就业网</a>
-			<a style="margin-left:114px;">山西教师教育网</a>	
-			<a style="margin-left:100px;">山西教育资源</a>	
-		</li>
-		<li>
-		    <a>山西中小学人文素养网</a>
-			<a style="margin-left:4px;">山西语言文字网</a>
-			<a style="margin-left:60px;">教育人才网</a>
-			<a style="margin-left:141px;">山西教育电视台</a>	
-			<a style="margin-left:100px;">山西教育博览会</a>	
-		</li>
-		<li>
-		    <a>扇子招考网</a>
-			<a style="margin-left:72px;">青少年读书网</a>
-			<a></a>
-			<a></a>	
-			<a></a>	
-		</li>
+			<li style="border-bottom:1px solid #ffffff;padding-top:10px;">
+			    <a>特别连接</a>
+				<a style="margin-left:20px;">区县</a>
+				<a style="margin-left:20px;">市教委直属单位</a>
+				<a style="margin-left:20px;">高校</a>	
+				<a style="margin-left:20px;">中小幼及职校</a>	
+				<a style="margin-left:20px;">友情链接</a>	
+			</li>
+			<li>
+			    <a>教育部</a>
+				<a style="margin-left:100px;">山西教育</a>
+				<a style="margin-left:100px;">山西中小学德育网</a>
+				<a style="margin-left:100px;">山西学前教育网</a>	
+				<a style="margin-left:100px;">山西基础教育信息网</a>	
+			</li>
+			<li>
+			    <a>职称教育在线</a>
+				<a style="margin-left:58px;">山西终身学习网</a>
+				<a style="margin-left:60px;">高校毕业就业网</a>
+				<a style="margin-left:114px;">山西教师教育网</a>	
+				<a style="margin-left:100px;">山西教育资源</a>	
+			</li>
+			<li>
+			    <a>山西中小学人文素养网</a>
+				<a style="margin-left:4px;">山西语言文字网</a>
+				<a style="margin-left:60px;">教育人才网</a>
+				<a style="margin-left:141px;">山西教育电视台</a>	
+				<a style="margin-left:100px;">山西教育博览会</a>	
+			</li>
+			<li>
+			    <a>扇子招考网</a>
+				<a style="margin-left:72px;">青少年读书网</a>
+				<a></a>
+				<a></a>	
+				<a></a>	
+			</li>
 		</ul>
 	</div>
-</div>
+
 <?php require('foot.php');?>
-</div>
 </body>
 <script src="http://libs.baidu.com/jquery/1.4.2/jquery.min.js"></script>
 <script src="/assets/js/SuperSlide.js"></script>

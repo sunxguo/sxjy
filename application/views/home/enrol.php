@@ -97,7 +97,7 @@
 		<div style="width:1000px; margin:0 auto;">
 			<img src="/assets/images/68.png" style="padding:20px 0;"/>
 			<div>
-				<div style="float:left;">
+				<div style="float:left;" style="width:452px;">
 					<div id="slideBox" class="slideBox">
 						<div class="hd">
 							<ul><li>1</li><li>2</li><li>3</li></ul>
@@ -220,7 +220,7 @@
 					</div>
 				</div>
 				<div style="float:right;">
-					<div style="width:546px;">
+					<div style="width:540px;">
 						<p style="font-size:18px; color:#0075a9;">山西省2015年高考志愿填报咨询会</p>
 						<div style="margin-top:10px;">
 							<a style="padding-top:15px;">本科二批以上院校2013-2014年计划</a>

@@ -11,9 +11,9 @@
 		<div style="width:1000px; margin:0 auto;padding-top:16px;">
 		    <div>
 			<div style="float:left; wigth:272px;">
-				<a href="/"><img src="/assets/images/logo.png"/></a>
+				<a href="/"><img style="border:none;" src="/assets/images/logo.png"/></a>
 			</div>
-			<div style="float:right;width:728px">
+			<div style="float:right;width:720px">
 				<div style="float:right; margin-top:15px;">
 					<ul>
 						<li>
@@ -26,8 +26,8 @@
 						</li>
 					</ul>
 					<form action="/home/search" method="get" enctype="multipart/form-data">
-						<input name="keywords" class="search-text" type="text" style="background:#eeeeee; border:1px solid #d4d4d4; width:320px; height:30px; margin-top:5px;">
-						<input type="submit" value="搜索" style="cursor:pointer;background:#eeeeee; width:68px; height:32px; border:1px solid #d4d4d4; margin-left:-4px;">
+						<input name="keywords" class="search-text" type="text" style="background:#eeeeee; border:1px solid #d4d4d4; width:320px; height:20px;padding:5px 12px;float:left;">
+						<input type="submit" value="搜索" style="cursor:pointer;background:#eeeeee; width:68px; height:32px; border:1px solid #d4d4d4; margin-left:-4px;display:block;float:left;">
 					</form>
 				</div>
 			</div>

@@ -8,38 +8,38 @@
 <body>
 	<?php require('head.php');?>
 	<div style="background:#fde2cf; height:40px;">
-			<div style="width:1000px; margin:0 auto;">
-			    <ul style="float:left;text-align:center;">
-					<li style="float:left; padding:11px 0; width:100px;">
-						<a href="/" style="font-size:14px; ">首页</a>
-					</li>
-					<li style="float:left; padding:11px 0; width:100px;">
-						<a href="/home/news" style="font-size:14px;">新闻</a>
-					</li>
-					<li style="float:left; padding:11px 0; width:100px;  ">
-						<a href="/home/edu" style="font-size:14px;">教育</a>
-					</li>
-					<li style="float:left; padding:11px 0; width:100px; background:#ff6600;">
-						<a style="font-size:14px; color:#ffffff;">市县</a>
-					</li>
-					<li style="float:left; padding:11px 0; width:100px;">
-						<a href="/home/enrol" style="font-size:14px;">招考</a>
-					</li>
-					<li style="float:left; padding:11px 0; width:100px;">
-						<a href="/home/school" style="font-size:14px;">学校</a>
-					</li>
-					<li style="float:left; padding:11px 0; width:100px;">
-						<a href="/home/policy" style="font-size:14px;">政策</a>
-					</li>
-					<li style="float:left; padding:11px 0; width:100px;">
-						<a href="/home/active" style="font-size:14px;">活动</a>
-					</li>
-					<li style="float:left; padding:11px 0; width:100px;">
-						<a href="/home/about" style="font-size:14px;">关于</a>
-					</li>
-					<div style="clear:both;"></div>
-				</ul>
-		    </div>	
+		<div style="width:1000px; margin:0 auto;">
+		    <ul style="float:left;text-align:center;">
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/" style="font-size:14px; ">首页</a>
+				</li>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/home/news" style="font-size:14px;">新闻</a>
+				</li>
+				<li style="float:left; padding:11px 0; width:100px;  ">
+					<a href="/home/edu" style="font-size:14px;">教育</a>
+				</li>
+				<li style="float:left; padding:11px 0; width:100px; background:#ff6600;">
+					<a style="font-size:14px; color:#ffffff;">市县</a>
+				</li>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/home/enrol" style="font-size:14px;">招考</a>
+				</li>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/home/school" style="font-size:14px;">学校</a>
+				</li>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/home/policy" style="font-size:14px;">政策</a>
+				</li>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/home/active" style="font-size:14px;">活动</a>
+				</li>
+				<li style="float:left; padding:11px 0; width:100px;">
+					<a href="/home/about" style="font-size:14px;">关于</a>
+				</li>
+				<div style="clear:both;"></div>
+			</ul>
+	    </div>	
 	</div>
 	<div style="background:#f66d10; height:48px;">
 			<div style="width:1000px; margin:0 auto;">

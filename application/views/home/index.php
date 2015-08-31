@@ -391,16 +391,11 @@
     <div style="background:#33a3d3; width:960px; margin:0 auto;" class="qwe">
 	    <ul>
 			<li style="border-bottom:1px solid #ffffff;padding-top:10px;">
-			    <a>特别连接</a>
-				<a style="margin-left:20px;">区县</a>
-				<a style="margin-left:20px;">市教委直属单位</a>
-				<a style="margin-left:20px;">高校</a>	
-				<a style="margin-left:20px;">中小幼及职校</a>	
-				<a style="margin-left:20px;">友情链接</a>	
+				<span>友情链接</span>	
 			</li>
 			<li>
-			    <a>教育部</a>
-				<a style="margin-left:100px;">山西教育</a>
+			    <a href="http://www.moe.gov.cn/" target="_blank">教育部</a>
+				<a href="http://www.sxedu.gov.cn/" target="_blank" style="margin-left:100px;">山西教育</a>
 				<a style="margin-left:100px;">山西中小学德育网</a>
 				<a style="margin-left:100px;">山西学前教育网</a>	
 				<a style="margin-left:100px;">山西基础教育信息网</a>	

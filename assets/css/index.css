@@ -60,7 +60,9 @@ img{border: 0;}
 .cen-one-right{float:right; width:280px;}
 
 .qwe ul li{padding:10px 20px;}
-.qwe ul li a{color:#ffffff; width:190px;}
+.qwe ul li a,
+.qwe ul li span
+{color:#ffffff; width:190px;}
 
 
 

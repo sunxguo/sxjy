@@ -10,7 +10,7 @@
 		<div class="footer news">
 	        <div class="footer-hd nav">
 	        	<ul class="clearfix">
-	        		<li><a>首页</a></li>
+	        		<li><a href="/">首页</a></li>
 	        		<li class="active"><a href="/home/news">新闻</a></li>
 	        		<li><a href="/home/edu">教育</a></li>
 	        		<li><a href="/home/area">市县</a></li>
@@ -27,7 +27,7 @@
 				<div style="text-align:left; padding-top:8px;"> 
 					<ul>
 					    <li style="float:left;">
-							<a><img src="/assets/images/30.png"/></a>
+							<a href="/home/news" class="channel channel-news">新 闻 频 道</a>
 						</li>
 						<li style="float:left; margin-left:26px; margin-top:10px;">	
 							<a href="/home/newsSub" style="color:#ffffff;">资 讯</a>
@@ -51,7 +51,7 @@
 					<div>
 						<a style="font-size:18px; padding:8px 18px; background:#e60012; color:#ffffff;">重要新闻</a>
 						<a style="font-size:24px; margin-left:10px;">山西省第四届大学生艺术展演活动艺术作品展</a>
-						<p style="margin-left:120px; margin-top:30px;">10月16日，山西省第四届大学生艺术展演活动艺术作品展览在山西大学美术学院隆重<br style="height:4px;"></br>
+						<p style="margin-left:120px; margin-top:30px;color:#292929;">10月16日，山西省第四届大学生艺术展演活动艺术作品展览在山西大学美术学院隆重<br style="height:4px;"></br>
 开幕，省教育厅巡视员武保旺出席了开幕式并讲话。省城高校主管艺术教育的部门负<br style="height:4px;"></br>
 责人和部分高校的师生参加了开幕式。</p>
 						<div class="ellipsis" style="border-top:1px solid #d4d4d4; border-bottom:1px solid #d4d4d4;height:38px; line-height:38px; margin-top:40px;">

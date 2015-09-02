@@ -133,3 +133,47 @@ ul.aboutMenu>li>label{padding: 8px 0;border: 1px solid #ccc;color: #078fc9;displ
 .curmb{padding: 15px 0;}
 .curmb>a{padding: 0 12px;}
 #preview img{width: 180px;height: 180px;}
+
+/* All */
+.channel{
+	width: 120px;
+	height: 30px;
+	line-height: 40px;
+	color: wheat;
+	font-weight: 600;
+	font-size: 16px;
+	text-align: center;
+}
+.channel:hover{
+	color: #F5E4C5;
+}
+.channel-school{
+	color: #A6F7DD;
+}
+.channel-school:hover{
+	color: #E7FDF6;
+}
+.channel-enrol{
+	color: #C1FDFF;
+}
+.channel-enrol:hover{
+	color: #DFFEFF;
+}
+.channel-edu{
+	color: #85FFC0;
+}
+.channel-edu:hover{
+	color: #D5FFEA;
+}
+.channel-news{
+	color: #FBCFD2;
+}
+.channel-news:hover{
+	color: #FFF0F1;
+}
+.channel-policy{
+	color: #D8D5FF;
+}
+.channel-policy:hover{
+	color: #F0EFFF;
+}

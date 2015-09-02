@@ -11,7 +11,7 @@
 		<div class="footer news">
 	        <div class="footer-hd nav">
 	        	<ul class="clearfix">
-	        		<li><a>首页</a></li>
+	        		<li><a href="/">首页</a></li>
 	        		<li class="active"><a href="/home/news">新闻</a></li>
 	        		<li><a href="/home/edu">教育</a></li>
 	        		<li><a href="/home/area">市县</a></li>
@@ -29,7 +29,7 @@
 				<div style="text-align:left; padding-top:8px;"> 
 					<ul>
 					    <li style="float:left;">
-							<a><img src="/assets/images/30.png"/></a>
+							<a href="/home/news" class="channel channel-news">新 闻 频 道</a>
 						</li>
 						<li style="float:left; margin-left:26px; margin-top:10px;">	
 							<a href="/home/newsSub" style="color:#ffffff;">资 讯</a>

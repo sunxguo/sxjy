@@ -45,7 +45,7 @@
 				<div style="text-align:left; padding-top:8px;"> 
 					<ul>
 					    <li style="float:left;">
-							<a><img src="/assets/images/58.png"/></a>
+							<a href="/home/area" class="channel">市 县 频 道</a>
 						</li>
 						<li style="float:left; margin-left:26px; margin-top:10px;">	
 							<a href="/home/areaSub" style="color:#ffffff;">太 原</a>

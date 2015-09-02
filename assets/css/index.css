@@ -1,4 +1,7 @@
 *{margin:0; padding:0; list-style-type:none; text-decoration:none; color:#292929;}
+a:hover{
+	color:#0075a9;
+}
 body,
 button, input, select, textarea { /* for ie */
     /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
@@ -121,3 +124,47 @@ i{font-size: 150%;color: #0075A9;}
 /*news*/
 .footer.news{background-color: #f8cfd2;}
 .news .active{background-color: #e60012;}
+
+/* All */
+.channel{
+	width: 120px;
+	height: 30px;
+	line-height: 33px;
+	color: wheat;
+	font-weight: 600;
+	font-size: 16px;
+	text-align: center;
+}
+.channel:hover{
+	color: #F5E4C5;
+}
+.channel-school{
+	color: #A6F7DD;
+}
+.channel-school:hover{
+	color: #E7FDF6;
+}
+.channel-enrol{
+	color: #C1FDFF;
+}
+.channel-enrol:hover{
+	color: #DFFEFF;
+}
+.channel-edu{
+	color: #85FFC0;
+}
+.channel-edu:hover{
+	color: #D5FFEA;
+}
+.channel-news{
+	color: #FBCFD2;
+}
+.channel-news:hover{
+	color: #FFF0F1;
+}
+.channel-policy{
+	color: #D8D5FF;
+}
+.channel-policy:hover{
+	color: #F0EFFF;
+}

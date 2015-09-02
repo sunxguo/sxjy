@@ -45,7 +45,7 @@
 			<div style="text-align:left; padding-top:8px;"> 
 				<ul>
 					<li style="float:left;">
-						<a><img src="/assets/images/67.png"/></a>
+						<a href="/home/enrol" class="channel channel-enrol">招 考 频 道</a>
 					</li>
 					<li style="float:left; margin-left:26px; margin-top:10px;">	
 						<a href="/home/enrolSub" style="color:#ffffff;">招 考</a>

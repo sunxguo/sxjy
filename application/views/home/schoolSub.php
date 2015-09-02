@@ -45,7 +45,7 @@
 			<div style="text-align:left; padding-top:8px;"> 
 				<ul>
 					<li style="float:left;">
-						<a><img src="/assets/images/72.png"/></a>
+						<a href="/home/school" class="channel channel-school">学 校 频 道</a>
 					</li>
 					<li style="float:left; margin-left:26px; margin-top:10px;">	
 						<a href="#" style="color:#ffffff;">管 理</a>

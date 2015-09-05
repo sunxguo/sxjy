@@ -3,6 +3,7 @@
 <meta charset="UTF-8">
 <title></title>
 <link rel="stylesheet" href="/assets/css/denglu.css"/>
+<link rel="stylesheet" href="/assets/css/template.css"/>
 </head>
 <body>
 	<?php require('head.php');?>
@@ -107,30 +108,17 @@
 						<div style="border-top:1px dashed #d4d4d4; margin-top:30px;"></div>
 					</div>
 				</div>
-				<div style="background:#eeeeee; height:42px;margin-top:20px;">
-					<ul style="padding:8px 250px;">
-						<li style="width:40px; height:24px; background:#008cc8; border-radius:4px; float:left; text-align:center; line-height:24px; color:#ffffff;margin:0 10px;">《</li>
-						<li style="float:left; text-align:center; line-height:24px;">
-							<a style="margin:0 20px;">1</a>
-							<a style="margin:0 20px; background:#008cc8; padding:5px 5px; border-radius:4px; color:#ffffff;">2</a>
-							<a style="margin:0 20px;">3</a>
-							<a style="margin:0 20px;">4</a>			
-							<a style="margin:0 20px;">···</a>
-							<a style="margin:0 20px;">1223</a>
-						</li>
-						<li style="width:40px; height:24px; background:#008cc8; border-radius:4px; float:right;text-align:center; line-height:24px; color:#ffffff;">》</li>
-						<div style="clear:both;"></div>
+				<div style="height:42px;margin-top:20px;text-align: center;">
+					<ul class="km-pagination clearfix" style="margin:0 auto;">
+						<li><a href="">首页</a></li>
+						<li><a href="">1</a></li>
+						<li><a href="">2</a></li>
+						<li><a href="">3</a></li>
+						<li><a href="">4</a></li>
+						<li><a href="">5</a></li>
+						<li><a href="">尾页</a></li>
 					</ul>
 				</div>
-				<ul class="pagination clearfix">
-					<li><a href="">首页</a></li>
-					<li><a href="">1</a></li>
-					<li><a href="">2</a></li>
-					<li><a href="">3</a></li>
-					<li><a href="">4</a></li>
-					<li><a href="">5</a></li>
-					<li><a href="">尾页</a></li>
-				</ul>
 			</div>
 		</div>
 	</div>

@@ -282,16 +282,12 @@
 			       <a style="background:#0075a9; padding:5px 30px; margin-left:20px; color:#ffffff;">立即注册</a>
 			   </div>
 			</div>
-			<div style="margin-top:33px;border:1px solid #d4d4d4;">
+			<div style="height:339px;margin-top:33px;border:1px solid #d4d4d4;">
 			   <div style="background:#ebebeb; padding:10px 10px;">
 			        <a class="labathree" href="#"><i class="icon-bullhorn"></i>公告</a>
 			   </div>
 			   <p style="color:#292929; padding:10px 10px;">考生和家长们注意啦！</p>
 			   <p style="color:#292929; padding:0px 10px;">山西2014年高考成绩查询</p>
-			   <div style="padding:10px 10px; background:#ebebeb; margin-top:148px; border-top:1px solid #d4d4d4;">关于山西高考资讯</div>
-			   <div style="padding:10px 10px; background:#ebebeb; border-top:1px solid #d4d4d4;">报名信息</div>
-			   <div style="padding:10px 10px; background:#ebebeb; border-top:1px solid #d4d4d4;">《山西教育招生考试》</div>
-			   <div style="padding:10px 10px; background:#ebebeb; border-top:1px solid #d4d4d4;">其他</div>
 			</div>
 			<div style="border:1px solid #d4d4d4; margin-top:22px;">
 			    <ul style="padding-top:10px; padding-left:10px;font-size:12px;" class="f12">

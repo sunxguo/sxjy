@@ -44,7 +44,7 @@
 		<div style="background:#078fc9; height:16px;"></div>
 		<div style="width:1000px; margin:0 auto;">
 			<div style="width:122px; padding:40px 0;">
-				<ul class="aboutMenu" style="border-right:1px dashed #d4d4d4;height:2500px;">
+				<ul class="aboutMenu" style="border-right:1px dashed #d4d4d4;height:4000px;">
 					<li class="aboutMenu1">
 						<input type="radio" id="aboutMenu1" name="aboutMenu" checked="checked" />
 						<label for="aboutMenu1">单位简介</label>

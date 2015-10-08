@@ -20,7 +20,7 @@
 			</div>
 			<div style="float:right;width:720px">
 				<div style="float:right; margin-top:15px;">
-					<ul>
+					<ul style="margin-bottom:10px;">
 						<li>
 							<a href="#" style="color:red; padding:0 5px; color:#292929;">新 闻</a>
 							<a href="#" style="padding:0 5px; color:#292929;">图 片</a>

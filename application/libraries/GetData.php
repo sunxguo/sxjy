@@ -140,6 +140,9 @@ class GetData{
 		if(isset($parameters['columns'])){
 			$condition['where_in']=array('column'=>$parameters['columns']);
 		}
+		if(isset($parameters['nocolumns'])){
+			$condition['where_not_in']=array('column'=>$parameters['nocolumns']);
+		}
 		if(isset($parameters['orderBy'])){
 			$condition['order_by']=$parameters['orderBy'];
 		}
@@ -168,7 +171,7 @@ class GetData{
 	public function getColumns($type,$isOnlyId){
 		switch ($type) {
 			case 'home'://首页
-				$columns = array(77,78,79,80,81);
+				$columns = array(76,77,78,79,80,81);
 				break;
 			case 'news'://新闻
 				$columns = array(2,3,4,5,6,19,20,21,22,23,24,25,26);

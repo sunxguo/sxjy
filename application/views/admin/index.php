@@ -26,10 +26,10 @@
         </caption>
         <thead>
             <tr>
-                <th>栏目</th>
-                <th>标题</th>
-                <th>作者</th>
-                <th>发布时间</th>
+                <th style="width:20%;">栏目</th>
+                <th style="width:40%;">标题</th>
+                <th style="width:20%;">作者</th>
+                <th style="width:20%;">发布时间</th>
             </tr>
         </thead>
         <tbody>

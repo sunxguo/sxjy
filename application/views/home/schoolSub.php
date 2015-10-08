@@ -65,7 +65,7 @@
 				<ul style="padding:20px 0;">
 					<li style="width:20px; height:24px; background:#1b9770; float:left;"></li>
 					<li style="float:left; line-height:24px; margin-left:10px;">
-						<a>首页 >> 搜索 >> 新闻 >> 关键字 : 大学</a>
+						<a>首页 >> 学校 >> 管理</a>
 					</li>
 					<div style="clear:both;"></div>
 				</ul>

@@ -2,9 +2,14 @@
 <div>
 	<div style="height:30px; background:#eeeeee;">
 		<div style="width:1000px; padding:8px 0;margin:0 auto; text-align:left;">
-			<a href="#" style="padding-left:20px; background:url(/assets/images/1.png) no-repeat left center;text-decoration:none;">山西教育咨询中心</a>
-			<!--<span href="#">请<a href="/home/login" style="color:#e30516;">登录</a>丨<a href="/home/register">注册</a></span>-->
-			<a href="http://www.weather.com.cn/weather1d/101100101.shtml" target="_blank">太原 <span id="temp1"></span>~<span id="temp2"></span> <span id="weather"></span>[详情]</a>
+			<!--
+			<a href="#" style="padding-left:20px; background:url(/assets/images/1.png) no-repeat left center;text-decoration:none;">
+				山西教育咨询中心
+			</a>
+			-->
+			<span>主管单位：山西省教育厅 主办单位：山西省教育宣传中心 山西省教育厅新闻事务办公室</span>
+			<!--<span href="#">请<a href="/home/login" style="color:#e30516;">登录</a>丨<a href="/home/register">注册</a></span>
+			<a href="http://www.weather.com.cn/weather1d/101100101.shtml" target="_blank">太原 <span id="temp1"></span>~<span id="temp2"></span> <span id="weather"></span>[详情]</a>-->
 		</div>
 	</div>
 	<div style="background:url(/assets/images/2.1.png); height:112px;">

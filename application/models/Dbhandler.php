@@ -59,6 +59,11 @@ class DbHandler extends CI_Model{
 				$this->db->or_where_in($key,$value);
 			}
 		}
+		if(isset($condition['where_not_in'])){
+			foreach($condition['where_not_in'] as $key=>$value){
+				$this->db->where_not_in($key,$value);
+			}
+		}
 		if(isset($condition['like'])){
 			foreach($condition['like'] as $key=>$value){
 				$this->db->like($key,$value);

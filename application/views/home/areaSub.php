@@ -78,7 +78,7 @@
 			<ul style="padding:20px 0;">
 				<li style="width:20px; height:24px; background:#ff6600; float:left;"></li>
 				<li style="float:left; line-height:24px; margin-left:10px;">
-					<a>首页 >> 教育 >> 幼教</a>
+					<a>首页 >> 市县 >> 太原</a>
 				</li>
 				<div style="clear:both;"></div>
 			</ul>

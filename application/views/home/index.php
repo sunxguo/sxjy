@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <title>山西省教育宣传中心</title>
@@ -28,52 +28,32 @@
 	    <div class="footer-ft-top">
 	    	<div id="slideBox" class="slideBox">
 			<div class="hd">
-				<ul><li>1</li><li>2</li><li>3</li></ul>
+				<ul>
+					<?php for ($i=0; $i < sizeof($sliders); $i++):?>
+					<li><?php echo $i+1;?></li>
+					<?php endfor;?>
+				</ul>
 			</div>
 			<div class="bd">
 				<ul>
-					<li><a href="detail.html" target="_blank">
-						<div class="footer-ft-top-left">
-						    <h4 style="margin-top:10px; font-size:30px; text-align:center;">山西省</h4>
-						    <p style="margin-top:5px; font-size:30px; text-align:center;">全面深化基础教育教学改革创新项目</p>
-						    <h4 style="margin-top:5px; font-size:30px; text-align:center;">试点启动会</h4>
-							<p style="margin-top:15px; text-align:center;">为全面落实《山西省教育厅关于深化基础教育教学改革</p>
-							<p style="margin-top:5px; text-align:center;margin-left:-4px;">创新育人模式的意见》，2014年12月25日省教科院组</p>
-							<p style="margin-top:5px; margin-left:72px;">织召开了山西省···[详情]</p>
-							 <div style="clear:both;"></div>
-						</div>
-						<div class="footer-ft-top-right">
-						    <img src="/assets/images/75.png" style="width:460px; height:270px;"/>
-						</div>
-					</a></li>
-					<li><a href="detail.html" target="_blank">
-						<div class="footer-ft-top-left">
-						    <h4 style="margin-top:10px; font-size:30px; text-align:center;">山西省</h4>
-						    <p style="margin-top:5px; font-size:30px; text-align:center;">全面深化基础教育教学改革创新项目</p>
-						    <h4 style="margin-top:5px; font-size:30px; text-align:center;">试点启动会</h4>
-							<p style="margin-top:15px; text-align:center;">为全面落实《山西省教育厅关于深化基础教育教学改革</p>
-							<p style="margin-top:5px; text-align:center;margin-left:-4px;">创新育人模式的意见》，2014年12月25日省教科院组</p>
-							<p style="margin-top:5px; margin-left:72px;">织召开了山西省···[详情]</p>
-							 <div style="clear:both;"></div>
-						</div>
-						<div class="footer-ft-top-right">
-						    <img src="/assets/images/76.png" style="width:460px; height:270px;"/>
-						</div>
-					</a></li>
-					<li><a href="detail.html" target="_blank">
-						<div class="footer-ft-top-left">
-						    <h4 style="margin-top:10px; font-size:30px; text-align:center;">山西省</h4>
-						    <p style="margin-top:5px; font-size:30px; text-align:center;">全面深化基础教育教学改革创新项目</p>
-						    <h4 style="margin-top:5px; font-size:30px; text-align:center;">试点启动会</h4>
-							<p style="margin-top:15px; text-align:center;">为全面落实《山西省教育厅关于深化基础教育教学改革</p>
-							<p style="margin-top:5px; text-align:center;margin-left:-4px;">创新育人模式的意见》，2014年12月25日省教科院组</p>
-							<p style="margin-top:5px; margin-left:72px;">织召开了山西省···[详情]</p>
-							 <div style="clear:both;"></div>
-						</div>
-						<div class="footer-ft-top-right">
-						    <img src="/assets/images/14.png" style="width:460px; height:270px;"/>
-						</div>
-					</a></li>
+					<?php foreach ($sliders as $value):?>
+					<li>
+						<a href="/home/detail?id=<?php echo $value->id;?>" target="_blank">
+							<div class="footer-ft-top-left">
+							    <h4 style="margin-top:10px; font-size:30px; text-align:center;line-height:40px;"><?php echo $value->title;?></h4>
+								<p style="margin-top:15px; text-align:center;line-height:20px;">
+									<?php echo mb_strlen($value->summary,'utf-8')>100?mb_substr($value->summary,0,100,'utf-8').'...':$value->summary;?>
+									<p style="float:right;margin-top: 10px;">[详情]</p>
+								</p>
+
+								<div style="clear:both;"></div>
+							</div>
+							<div class="footer-ft-top-right">
+							    <img src="<?php echo $value->thumbnail;?>" style="width:460px; height:270px;"/>
+							</div>
+						</a>
+					</li>
+					<?php endforeach;?>
 				</ul>
 			</div>
 
@@ -83,11 +63,13 @@
 	</div>
 </div>
 <div class="centent-one">
-	    <ul>
-		    <li>
-			    <a style="background:#0075a9; padding:10px 20px;color:#ffffff;">重要通知通告</a>
+	    <ul style="padding:0px;">
+		    <li style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+			    <a style="background:#0075a9; padding:10px 20px;color:#ffffff;display: inline-block;">重要通知通告</a>
 				<a style="background:url(/assets/images/10.png) no-repeat left center; padding:20px 20px;color:#e60012;">最新</a>
-				<a>2015年省外高校在晋艺术  ·  2014年高考冲刺宝典：一高考专业选择：文科就业率高  ·  “师生关系”的师生访谈</a>
+				<?php foreach ($notifications as $value):?>
+				【<a href="/home/detail?id=<?php echo $value->id;?>" target="_blank"><?php echo $value->title;?></a>】
+				<?php endforeach;?>
 			</li>
 		</ul>
 	</div>
@@ -96,32 +78,30 @@
 	<div class="cen-one">
 	    <div class="cen-one-left">
 		    <div class="left-one">
-			    <h1>2015年省外高校在晋艺</h1>
-				<p>2014年高考冲刺宝典：一模过后如何成为   /   高考专业选择：文科就业率高的十大专业   /   寓教于乐</p>
+		    	<?php if(isset($notifications[0])):?>
+			    <h1 style="padding: 0 10px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+			    	<a href="/home/detail?id=<?php echo $notifications[0]->id;?>" target="_blank" style="color: #0075a9;"><?php echo $notifications[0]->title;?></a>
+			    </h1>
+				<p><?php echo $notifications[0]->summary;?></p>
+				<?php endif;?>
 			</div>
 			<div class="left-two">
 			    <div class="left-two-left">
 				    <a class="laba" href="#">新闻</a>
 					<img src="/assets/images/15.png" style="width:310px;"/>
 					<ul style="margin-top:15px;">
-					    <li><a href="#">山西省第四届大学生艺术展演活动艺术作品展览</a></li>
-					    <li><a href="#">我省2014年普通高校招生工作会议在并召开</a></li>
-					    <li><a href="#">太原市教育局：“小升初”新政有望5月出台</a></li>
-					    <li><a href="#">山西晋城打破中小学教师职称“终身制”</a></li>
-					    <li><a href="#">山西面向省级贫困县定向招生220人 促进教育公</a></li>
-					    <li><a href="#">山西中学生参加国际机器人大赛</a>
+						<?php foreach ($news as $value):?>
+					    <li><a href="/home/detail?id=<?php echo $value->id;?>">[<?php echo $value->columnName;?>] <?php echo mb_strlen($value->title,'utf-8')>16?mb_substr($value->title,0,16,'utf-8').'...':$value->title;?></a></li>
+						<?php endforeach;?>
 				    </ul>
 				</div>
 				<div class="left-two-right">
 				    <a class="laba" href="#">资讯</a>
 					<img src="/assets/images/15.png" style="width:310px;"/>
 					<ul style="margin-top:15px;">
-					    <li><a href="#">[新闻-时评] 教育时评：高考改革不是学科</a></li>
-					    <li><a href="#">[新闻-时评] 前教育部发言人：现在的语文</a></li>
-					    <li><a href="#">[服务] 名师公益视频辅导将正式向全</a></li>
-					    <li><a href="#">[师范生、国防生] 2014年山西高考国防生志</a></li>
-					    <li><a href="#">[对口升学] 我省2014年专升本录取最</a></li>
-					    <li><a href="#">[长治] 长治义务教育阶段学校招生细</a>
+					    <?php foreach ($informations as $value):?>
+					    <li><a href="/home/detail?id=<?php echo $value->id;?>"><?php echo mb_strlen($value->title,'utf-8')>21?mb_substr($value->title,0,21,'utf-8').'...':$value->title;?></a></li>
+						<?php endforeach;?>
 				    </ul>
 				</div>
 				<div style="clear:both;"></div>
@@ -132,11 +112,13 @@
 				    <ul>
 					    <li class="color">
 						    <a class="labathree" href="#"><i class="icon-newspaper"></i>新闻</a>
-							<a href="#">资讯</a>
-							<b>丨</b>
 							<a href="#">时评</a>
                             <b>丨</b>
 							<a href="#">人物</a>
+                            <b>丨</b>
+							<a href="#">三晋教育</a>
+                            <b>丨</b>
+							<a href="#">教育广角</a>
 						</li>
 					</ul>
 					<img src="/assets/images/16.png" style="width:310px;"/>
@@ -390,6 +372,14 @@
 				<span>友情链接</span>	
 			</li>
 			<li>
+				<a href="http://www.sxedu.gov.cn/" target="_blank">山西省教育厅</a>
+				<a href="http://www.xinhuanet.com/" target="_blank">新华网</a>
+				<a href="http://www.sina.com.cn/" target="_blank">新浪网</a>
+				<a href="http://learning.sohu.com/" target="_blank">搜狐教育</a>
+				<a href="http://edu.qq.com/" target="_blank">腾讯教育</a>
+			</li>
+			<!--
+			<li>
 			    <a href="http://www.moe.gov.cn/" target="_blank">教育部</a>
 				<a href="http://www.sxedu.gov.cn/" target="_blank" style="margin-left:100px;">山西教育</a>
 				<a style="margin-left:100px;">山西中小学德育网</a>
@@ -417,6 +407,7 @@
 				<a></a>	
 				<a></a>	
 			</li>
+			-->
 		</ul>
 	</div>
 

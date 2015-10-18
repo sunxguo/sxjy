@@ -130,7 +130,7 @@
 				<ul class="form-list">
 					<li>
 						<label for="column">子栏目 ： </label>
-						<select id="column" class="inp-txt km-form-control" style="width:100px;">
+						<select id="column" class="inp-txt km-form-control" style="width:150px;">
 							<?php foreach ($subColumns as $value):?>
 							<option value="<?php echo $value->id;?>">
 								<?php echo $value->name;?>
@@ -234,7 +234,7 @@ KindEditor.ready(function(K) {
         fileManagerJson : '/assets/kindEditor/php/file_manager_json.php',
         allowFileManager : true,
         width : '100%',
-        height:'300px',
+        height:'200px',
         resizeType:0,
         imageTabIndex:1
     });
@@ -246,7 +246,7 @@ KindEditor.ready(function(K) {
         fileManagerJson : '/assets/kindEditor/php/file_manager_json.php',
         allowFileManager : true,
         width : '100%',
-        height:'300px',
+        height:'200px',
         resizeType:0,
         imageTabIndex:1
     });

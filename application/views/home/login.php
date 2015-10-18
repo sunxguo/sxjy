@@ -5,6 +5,7 @@
 <title></title>
 <link rel="stylesheet" href="/assets/css/login.css"/>
 <link rel="stylesheet" type="text/css" href="/assets/plugins/icomoon/style.css">
+<script type="text/javascript" src="/assets/js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="/assets/js/common.js"></script>
 </head>
 <body>
@@ -17,7 +18,7 @@
 <div>
 	<div class="head-mian">     
 		<div class="head-mian-img"><img src="/assets/images/logo.png"></div>
-		<div class="head-mian-p"><p>2015年6月29日 星期一</p></div>
+		<div class="head-mian-p"><p id="today"></p></div>
 		<div style="clear:both;"></div>
 	</div>
 </div>
@@ -34,13 +35,13 @@
 					</div>
 					<div class="account">
 					    <div class="account-head">
-					    	<i class="icon-user"></i><input type="text" placeholder="手机号/会员号/邮箱"/>
+					    	<i class="icon-user"></i><input id="email" type="text" placeholder="邮箱"/>
 					    </div>
 					</div>
 					<div style="clear:both;"></div>
 					<div class="account">
 					    <div class="account-head">
-						    <i class="icon-unlocked"></i><input type="password" />
+						    <i class="icon-unlocked"></i><input id="password" type="password" placeholder="密码" />
 					    </div>
 					</div>
 					<div style="clear:both;"></div>
@@ -69,6 +70,33 @@
 	    
 	</div>
 </div>
+<script type="text/javascript">
+	var oDate = new Date(); //实例一个时间对象 2015年6月29日 星期一
+	$("#today").text(dateFormat ('YYYY年MM月DD日 星期W',oDate));
+	function login(){
+		if($("#email").val()==''){
+			alert('邮箱不能为空！');
+			return false;
+		}
+		if(!isEmail($("#email").val())){
+			alert('邮箱格式不正确！');
+			return false;
+		}
+		if($("#password").val()==''){
+			alert('密码不能为空！');
+			return false;
+		}
+		var data=new Object();
+		data.infoType='login';
+		data.email=$("#email").val();
+		data.password=$("#password").val();
+		//data.validcode=$("#validcode").val();
+		dataHandler('/common/getInfo',data,null,null,null,loginSuccess,false,false);
+	}
+	function loginSuccess(){
+		location.href="/home";
+	}
+</script>
 <div>
 <div class="footer-hd">
     <p>

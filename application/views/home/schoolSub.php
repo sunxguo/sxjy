@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <title>学校 subpage</title>

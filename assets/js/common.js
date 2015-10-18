@@ -169,6 +169,35 @@ function language(language){
 function refreshCode(){
 	$("#validCodeImg").attr("src","/common/createVeriCode");
 }
+function isEmail(str){ 
+	var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/; 
+	return reg.test(str); 
+}
+function dateFormat (formatStr,time){   
+    var str = formatStr;   
+    var Week = ['日','一','二','三','四','五','六'];  
+  	
+    str=str.replace(/yyyy|YYYY/,time.getFullYear());   
+    str=str.replace(/yy|YY/,(time.getYear() % 100)>9?(time.getYear() % 100).toString():'0' + (time.getYear() % 100));   
+  	var month=time.getMonth()+1;
+    str=str.replace(/MM/,month>9?month.toString():'0' + month);   
+    str=str.replace(/M/g,month);   
+  
+    str=str.replace(/w|W/g,Week[time.getDay()]);   
+  
+    str=str.replace(/dd|DD/,time.getDate()>9?time.getDate().toString():'0' + time.getDate());   
+    str=str.replace(/d|D/g,time.getDate());   
+  
+    str=str.replace(/hh|HH/,time.getHours()>9?time.getHours().toString():'0' + time.getHours());   
+    str=str.replace(/h|H/g,time.getHours());   
+    str=str.replace(/mm/,time.getMinutes()>9?time.getMinutes().toString():'0' + time.getMinutes());   
+    str=str.replace(/m/g,time.getMinutes());   
+  
+    str=str.replace(/ss|SS/,time.getSeconds()>9?time.getSeconds().toString():'0' + time.getSeconds());   
+    str=str.replace(/s|S/g,time.getSeconds());   
+  
+    return str;   
+} 
 /*
 function mainCategoryChange(){
 	var category = new Object(); 

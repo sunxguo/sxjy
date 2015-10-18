@@ -1,4 +1,5 @@
 <script src="http://libs.baidu.com/jquery/1.4.2/jquery.min.js"></script>
+<script src="/assets/js/common.js" type="text/javascript"></script>
 <div>
 	<div style="height:30px; background:#eeeeee;">
 		<div style="width:1000px; padding:8px 0;margin:0 auto; text-align:left;">

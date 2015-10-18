@@ -26,6 +26,17 @@ class Common extends CI_Controller {
 					"time"=>date("Y-m-d H:i:s")
 				);
 			break;
+			case "user":
+				if($data->validcode!=$_SESSION['authcode']){
+					echo json_encode(array("result"=>"failed","message"=>"验证码错误！"));
+					return false;
+				}
+				$table='user';
+				$info=array(
+					"email"=>$data->email,
+					"password"=>md5('SXJY'.($data->password)),
+					"time"=>date("Y-m-d H:i:s")
+				);
 		}
 		$result=$this->dbHandler->insertData($table,$info);
 		if($result==1)echo json_encode(array("result"=>"success","message"=>"信息写入成功"));
@@ -74,6 +85,41 @@ class Common extends CI_Controller {
 		switch($data->infoType){
 			case 'essay':
 				$result=$this->getdata->getContent('essay',$data->id);
+			break;
+			case 'login':
+				if(property_exists($data, "email") && property_exists($data, "password")){
+					$email=$data->email;
+					$password=$data->password;
+					$info=$this->getdata->getContentAdvance('user',array('email'=>$email));
+					if(property_exists($info,'email')){
+						$post_pwd=MD5("SXJY".$password);
+						$db_pwd=$info->password;
+						if($post_pwd==$db_pwd){
+							$_SESSION['useremail']=$info->email;
+							$_SESSION['userid']=$info->id;
+							$_SESSION['usertype']="user";
+							echo json_encode(array("result"=>"success","message"=>"登录成功!"));
+							return false;
+						}
+						else{
+							echo json_encode(array("result"=>"failed","message"=>"密码错误!"));
+							return false;
+						}
+					}
+					else{
+						echo json_encode(array("result"=>"failed","message"=>"用户名不存在!"));
+						return false;
+					}
+				}else{
+					echo json_encode(array("result"=>"failed","message"=>"请输入用户名和密码!"));
+					return false;
+				}
+			break;
+			case 'logout':
+				unset($_SESSION["useremail"]);
+				unset($_SESSION["userid"]);
+				unset($_SESSION["usertype"]);
+				$result='成功退出！';
 			break;
 		}
 		echo json_encode(array("result"=>"success","message"=>$result));

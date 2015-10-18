@@ -107,7 +107,10 @@
 				<div style="clear:both;"></div>
 			</div>
 			<div class="left-three">
-			    <img src="/assets/images/12.png" style="width:660px;"/>
+
+		    	<?php if(isset($midAdvertisement1[0])):?>
+			    <img src="<?php echo $midAdvertisement1[0]->thumbnail;?>" title="<?php echo $midAdvertisement1[0]->title;?>" alt="<?php echo $midAdvertisement1[0]->title;?>" style="width:660px;"/>
+				<?php endif;?>
 				<div class="left-three-left">
 				    <ul>
 					    <li class="color">
@@ -150,191 +153,178 @@
 				<div style="clear:both;"></div>
 				<ul style="margin-top:20px;">
 					<li class="color">
-					    <a class="labathree" href="#"><i class="icon-books"></i>教育</a>
-					    <a href="#">基督</a>
-					    <b>丨</b>
-						<a href="#">高教</a>
-                        <b>丨</b>
-						<a href="#">幼教</a>
+					    <a class="labathree" href="/home/edu"><i class="icon-books"></i>教育</a>
+						<a href="/home/eduSub?id=8">幼教</a>
 						<b>丨</b>
-						<a href="#">职教</a>
-                        <b>丨</b>
-						<a href="#">家教</a>
+						<a href="/home/eduSub?id=9">基教</a>
 						<b>丨</b>
-						<a href="#">留学</a>
-                        <b>丨</b>
-						<a href="#">心理</a>
+						<a href="/home/eduSub?id=10">高校</a>
 						<b>丨</b>
-						<a href="#">下载</a>
-						<b>丨</b>
-						<a href="#">读书</a>
+						<a href="/home/eduSub?id=11">职教</a>
                         <b>丨</b>
-						<a href="#">培训</a>
+						<a href="/home/eduSub?id=13">家教</a>
+						<b>丨</b>
+						<a href="/home/eduSub?id=12">留学</a>
+                        <b>丨</b>
+						<a href="/home/eduSub?id=14">心理</a>
+						<b>丨</b>
+						<a href="/home/eduSub?id=15">下载</a>
+						<b>丨</b>
+						<a href="/home/eduSub?id=16">读书</a>
+                        <b>丨</b>
+						<a href="/home/eduSub?id=17">培训</a>
 					</li>
 				</ul>
 				<img src="/assets/images/17.png" style="width:660px;"/>
 				<div class="left-three-left">
 				    <ul style="margin-top:15px;">
-					    <li style="padding:10px 0;"><a href="#">改革期限逼近 300余所独立学院选择不“变身”</a></li>
-					    <li style="padding:10px 0;"><a href="#">正规民办教育机构目前700多家 品牌是关键</a></li>
-					    <li style="padding:10px 0;"><a href="#">明年起全国各大名校独立学院将自授毕业学位</a></li>
-					    <li style="padding:10px 0;"><a href="#">高等教育自学考试招生简章</a></li>
-					    <li style="padding:10px 0;"><a href="#">我省2009年4月高等教育自学考试18日开考</a></li>
-					    <li style="padding:10px 0;"><a href="#">山西省高等教育自学考试2009年10月报考简章</a>
+				    	<?php for($i=1;$i<sizeof($edu);$i++):?>
+					    <li style="padding:10px 0;"><a href="/home/detail?id=<?php echo $edu[$i]->id;?>"><?php echo $edu[$i]->title;?></a></li>
+						<?php endfor;?>
 				    </ul>
 				</div>
 				<div class="left-three-right" style="margin-top:20px;">
-				    <img src="/assets/images/19.png"/ style="border:1px solid #cecece; border-bottom:none; width:310px;">
+					<?php if(isset($edu[0])):?>
+				    <img src="<?php echo $edu[0]->thumbnail;?>" title="<?php echo $edu[0]->title;?>" alt="<?php echo $edu[0]->title;?>" style="border:1px solid #cecece; border-bottom:none; width:310px;">
+					<?php endif;?>
 				</div>
 				<div style="clear:both;"></div>
 				<ul style="margin-top:30px;">
 					<li class="color">
-					    <a class="labathree" href="#"><i class="icon-study"></i>招考</a>
-					    <a href="#">普通高考</a>
+					    <a class="labathree" href="/home/enrol"><i class="icon-study"></i>招考</a>
+					    <a href="/home/enrolSub?id=44">高考</a>
 					    <b>丨</b>
-						<a href="#">中考</a>
+						<a href="/home/enrolSub?id=45">中考</a>
                         <b>丨</b>
-						<a href="#">成考</a>
-						<b>丨</b>
-						<a href="#">对口升学</a>
+						<a href="/home/enrolSub?id=46">对口升学</a>
                         <b>丨</b>
-						<a href="#">研考</a>
+						<a href="/home/enrolSub?id=47">考研</a>
 						<b>丨</b>
-						<a href="#">社考</a>
-						<a href="#" style="color:#0075a9;margin-left:150px;">更多》</a>
+						<a href="/home/enrolSub?id=48">社考</a>
 					</li>
 				</ul>
 				<img src="/assets/images/17.png" style="width:660px;"/>
 				<div style="border:1px solid #d4d4d4; margin-top:20px;">
 				    <ul style="padding:10px 10px;">
-					    <li style="padding:10px 0;"><a>山西大学附中为藏族学生举办成人礼：要懂得感恩</a></li>
-						<li style="padding:10px 0;"><a>山西省全面深化基础教育教学改革创新项目试点启动</a></li>
-						<li style="padding:10px 0;"><a>省教育厅召开厅党组反思剖析讨论会</a></li>
-						<li style="padding:10px 0;"><a>省教育厅举办全省高校维稳工作培训班</a></li>
-						<li style="padding:10px 0;"><a>我省召开“全面改薄”项目规划编制安排暨管理软件</a></li>
-						<li style="padding:10px 0;"><a>山西省奥赛获奖高考将不加分</a></li>
+				    	<?php foreach($enrol as $value):?>
+					    <li style="padding:10px 0;"><a href="/home/detail?id=<?php echo $value->id;?>"><?php echo $value->title;?></a></li>
+						<?php endforeach;?>
 					</ul>
 				</div>
-				<img src="/assets/images/13.png" style="width:660px; padding:40px 0;"/>
+				<?php if(isset($midAdvertisement2[0])):?>
+				<img src="<?php echo $midAdvertisement2[0]->thumbnail;?>" title="<?php echo $midAdvertisement2[0]->title;?>" alt="<?php echo $midAdvertisement2[0]->title;?>" style="width:672px; padding:40px 0;"/>
+				<?php endif;?>
 				<div style="border:1px solid #d4d4d4;">
 				    <ul style="padding:20px 0;">
 					    <li class="color">
-					        <a class="labathree" href="#"><i class="icon-world"></i>市县</a>
-					        <a href="#">太原</a>
+					        <a class="labathree" href="/home/area"><i class="icon-world"></i>市县</a>
+					        <a href="/home/areaSub?id=31">太原</a>
 					        <b>丨</b>
-						    <a href="#">临汾</a>
+						    <a href="/home/areaSub?id=32">临汾</a>
                             <b>丨</b>
-					     	<a href="#">运城</a>
+					     	<a href="/home/areaSub?id=33">运城</a>
 						    <b>丨</b>
-					     	<a href="#">晋城</a>
+					     	<a href="/home/areaSub?id=34">晋城</a>
                             <b>丨</b>
-						    <a href="#">长治</a>
+						    <a href="/home/areaSub?id=35">长治</a>
 						    <b>丨</b>
-						    <a href="#">阳泉</a>
+						    <a href="/home/areaSub?id=36">阳泉</a>
 							<b>丨</b>
-						    <a href="#">晋中</a>
+						    <a href="/home/areaSub?id=37">晋中</a>
                             <b>丨</b>
-					     	<a href="#">忻州 </a>
-						    <b>丨</b>
-					     	<a href="#">大同</a>
+					     	<a href="/home/areaSub?id=38">忻州 </a>
                             <b>丨</b>
-						    <a href="#">朔州</a>
+						    <a href="/home/areaSub?id=39">朔州</a>
 						    <b>丨</b>
-						    <a href="#">吕梁</a>   
+						    <a href="/home/areaSub?id=40">吕梁</a>  
+						    <b>丨</b>
+					     	<a href="/home/areaSub?id=84">大同</a> 
 					    </li>
 				    </ul>
 					<div style="border-top:1px solid #d4d4d4;"></div>
 					<ul style="padding:10px 10px;">
-					    <li style="padding:10px 0;"><a>原师院中区月底前搬迁　原址重新规划</a></li>
-						<li style="padding:10px 0;"><a>我省2014年硕士研究生招生考试成绩揭晓</a></li>
-						<li style="padding:10px 0;"><a>长治市在全市中小学校深入开展“三爱”教育活动</a></li>
-						<li style="padding:10px 0;"><a>为评院士花2300万打通关系？中科院回应对受贿院士不姑息</a></li>
-						<li style="padding:10px 0;"><a>教育部：超4亿 近三成国人不能用普通话交流</a></li>
-						<li style="padding:10px 0;"><a>中国人才无端消耗：本科生端盘子 博士生跑销售</a></li>
+						<?php foreach($area as $value):?>
+					    <li style="padding:10px 0;"><a href="/home/detail?id=<?php echo $value->id;?>">[<?php echo $value->columnName;?>] <?php echo $value->title;?></a></li>
+						<?php endforeach;?>
 					</ul>
 				</div>
 			</div>
 		 </div>
 		<div class="cen-one-right">
 		    <div style="border:1px solid #d4d4d4;">
-			   <p style="color:#0075a9;margin-top:10px;margin-left:20px;">HI！你好！</p>
-			   <p style="color:#0075a9; margin-top:2px;margin-left:20px;">欢迎来到山西省教育咨询中心</p>
-               <div style="padding:16px 20px;">	  
-			       <a style="background:#0075a9; padding:5px 30px; color:#ffffff;">登 录</a>
-			       <a style="background:#0075a9; padding:5px 30px; margin-left:20px; color:#ffffff;">立即注册</a>
+			   <p style="color:#0075a9;margin-top:10px;margin-left:20px;">您好！
+			   		<?php if(isset($_SESSION['useremail'])):?>
+			    	<?php echo $_SESSION['useremail'];?>
+			    	<?php endif;?>
+			    </p>
+			   <p style="color:#0075a9; margin-top:6px;margin-left:20px;">欢迎来到山西省教育咨询中心</p>
+               <div style="padding:13px 20px;">
+               		<?php if(!isset($_SESSION['useremail'])):?>
+			        <a href="/home/login" style="background:#0075a9; padding:5px 30px; color:#ffffff;">登 录</a>
+			        <a href="/home/register" style="background:#0075a9; padding:5px 30px; margin-left:20px; color:#ffffff;">立即注册</a>
+			    	<?php else:?>
+					<a href="javascript:logout();" style="background:#0075a9; padding:4px 30px;  color:#ffffff;">退出</a>
+			    	<?php endif;?>
 			   </div>
 			</div>
 			<div style="height:339px;margin-top:33px;border:1px solid #d4d4d4;">
 			   <div style="background:#ebebeb; padding:10px 10px;">
 			        <a class="labathree" href="#"><i class="icon-bullhorn"></i>公告</a>
 			   </div>
-			   <p style="color:#292929; padding:10px 10px;">考生和家长们注意啦！</p>
-			   <p style="color:#292929; padding:0px 10px;">山西2014年高考成绩查询</p>
+			    <?php foreach($bulletins as $value):?>
+			    <a href="/home/detail?id=<?php echo $value->id;?>" style="color:#292929; padding:10px 10px; display:block;"><?php echo $value->title;?></a>
+				<?php endforeach;?>
 			</div>
 			<div style="border:1px solid #d4d4d4; margin-top:22px;">
 			    <ul style="padding-top:10px; padding-left:10px;font-size:12px;" class="f12">
 					<li class="color">
-					    <a class="labathree" href="#"><i class="icon-hammer2"></i>政策</a>
-					    <a href="#">国内</a>
+					    <a class="labathree" href="/home/policy"><i class="icon-hammer2"></i>政策</a>
+					    <a href="/home/policySub?id=65">国内</a>
 					    <b>丨</b>
-						<a href="#">省区</a>
+						<a href="/home/policySub?id=66">省区</a>
                         <b>丨</b>
-						<a href="#">区域</a>
+						<a href="/home/policySub?id=67">区域</a>
 						<b>丨</b>
-						<a href="#">相关</a>
+						<a href="/home/policySub?id=68">相关</a>
 					</li>
 				</ul>
 				<img src="/assets/images/16.png" style="width:278px;"/>
 				<ul style="padding:10px 20px;">
-					    <li style="padding:10px 0;"><a>高校招生体育专业考试情况介</a></li>
-						<li style="padding:10px 0;"><a>4月25、26日全省普通高校招</a></li>
-						<li style="padding:10px 0;"><a>最“动听”的英语听力提高法</a></li>
-						<li style="padding:10px 0;"><a>最“动听”的英语听力提高法</a></li>
-						<li style="padding:10px 0;"><a>高招扶贫要防止造成新的不公</a></li>
-						<li style="padding:10px 0;"><a>高考改革“良法”更需“善治”</a></li>
-						<li style="padding:10px 0;"><a>今往何处去，专家来支招”</a></li>
+					<?php foreach($policy as $value):?>
+				    <li style="padding:10px 0;"><a href="/home/detail?id=<?php echo $value->id;?>"><?php echo $value->title;?></a></li>
+					<?php endforeach;?>
 				</ul>
 			</div>
 			<div style="border:1px solid #d4d4d4; margin-top:22px;">
-			    <ul style="padding:20px 10px;">
+			    <ul style="padding:20px 10px 0 10px">
 				    <li>
 					    <a style="font-weight:bold; color:#0075a9;">电子报刊</a>
-					    <a style="margin-left:150px;color:#0075a9;">[更多]</a>
+					    <!--<a style="margin-left:150px;color:#0075a9;">[更多]</a>-->
 					</li>
-					<li style="padding:20px 20px;">
+					<li style="padding:20px 30px 0 30px;">
 						<div class="picScroll-left">
+							<!--
 							<div class="hd">
 								<a class="next"></a>
 								<ul></ul>
 								<a class="prev"></a>
 								<span class="pageState"></span>
 							</div>
+							-->
 							<div class="bd">
 								<ul class="picList">
+									<?php foreach($epress as $value):?>
 									<li>
-										<div class="pic"><a href="detail.html" target="_blank"><img src="/assets/images/20.png" /></a></div>
-										<div class="title"><a href="detail.html" target="_blank">效果图1</a></div>
+										<div class="pic">
+											<a href="/home/detail?id=<?php echo $value->id;?>" target="_blank">
+												<img src="<?php echo $value->thumbnail;?>" />
+											</a>
+										</div>
+										<div class="title">
+											<a href="/home/detail?id=<?php echo $value->id;?>" target="_blank"><?php echo $value->title;?></a>
+										</div>
 									</li>
-									<li>
-										<div class="pic"><a href="detail.html" target="_blank"><img src="/assets/images/20.png" /></a></div>
-										<div class="title"><a href="detail.html" target="_blank">效果图2</a></div>
-									</li>
-									<li>
-										<div class="pic"><a href="detail.html" target="_blank"><img src="/assets/images/20.png" /></a></div>
-										<div class="title"><a href="detail.html" target="_blank">效果图3</a></div>
-									</li>
-									<li>
-										<div class="pic"><a href="detail.html" target="_blank"><img src="/assets/images/20.png" /></a></div>
-										<div class="title"><a href="detail.html" target="_blank">效果图4</a></div>
-									</li>
-									<li>
-										<div class="pic"><a href="detail.html" target="_blank"><img src="/assets/images/20.png" /></a></div>
-										<div class="title"><a href="detail.html" target="_blank">效果图5</a></div>
-									</li>
-									<li>
-										<div class="pic"><a href="detail.html" target="_blank"><img src="/assets/images/20.png" /></a></div>
-										<div class="title"><a href="detail.html" target="_blank">效果图6</a></div>
-									</li>
+									<?php endforeach;?>
 								</ul>
 							</div>
 						</div>
@@ -348,20 +338,34 @@
 					    <a style="margin-left:150px;color:#0075a9;">[更多]</a>
 					</li>
 					<li style="padding:10px 5px;">
-					    <a><img src="/assets/images/22.png" style="width:240px; height:118px;"/></a>
+						<?php if(isset($videonews[0])):?>
+					    <a href="/home/detail?id=<?php echo $videonews[0]->id;?>">
+					    	<img src="<?php echo $videonews[0]->thumbnail;?>" style="width:240px; height:118px;"/>
+					    </a>
+						<?php endif;?>
 					</li>
 					<li style="padding:0 5px;">
-					    <a><img src="/assets/images/23.png" style="width:115px;"/></a>
-						<a><img src="/assets/images/24.png" style="width:115px; margin-left:8px;"/></a>
+						<?php if(isset($videonews[1])):?>
+					    <a href="/home/detail?id=<?php echo $videonews[1]->id;?>">
+					    	<img src="<?php echo $videonews[1]->thumbnail;?>" style="width:115px;"/>
+					    </a>
+						<?php endif;?>
+						<?php if(isset($videonews[2])):?>
+						<a href="/home/detail?id=<?php echo $videonews[2]->id;?>">
+							<img src="<?php echo $videonews[2]->thumbnail;?>" style="width:115px; margin-left:8px;"/>
+						</a>
+						<?php endif;?>
 					</li>
 				</ul>	
 			</div>
 			<div style="margin-top:40px;">
-			    <div><a><img src="/assets/images/25.png" style="width:280px;"/</a></div>
-			    <div style="margin-top:10px;"><a><img src="/assets/images/26.png" style="width:280px;"/</a></div>
-				<div style="margin-top:10px;"><a><img src="/assets/images/27.png" style="width:280px;"/</a></div>
-				<div style="margin-top:10px;"><a><img src="/assets/images/28.png" style="width:280px;"/</a></div>
-				<div style="margin-top:10px;"><a><img src="/assets/images/29.png" style="width:280px;"/</a></div>
+			    <?php foreach ($rightDownAdvertisements as $key => $value):?>
+			    <div style="margin-top:10px;">
+			    	<a href="/home/detail?id=<?php echo $value->id;?>">
+			    		<img src="<?php echo $value->thumbnail;?>" style="width:280px;"/>
+			    	</a>
+			    </div>
+			    <?php endforeach;?>
 			</div>
 		</div>
 	</div>

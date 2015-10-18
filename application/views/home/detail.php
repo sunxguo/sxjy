@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <title>详细页面</title>
@@ -13,8 +13,8 @@
 			<li style="float:left; padding:11px 0; width:100px;">
 				<a  href="/" style="font-size:14px; ">首页</a>
 			</li>
-			<li style="float:left; padding:11px 0; width:100px; background:#e62232;">
-				<a style="font-size:14px; color:#ffffff;">新闻</a>
+			<li style="float:left; padding:11px 0; width:100px;">
+				<a href="/home/news" style="font-size:14px;">新闻</a>
 			</li>
 			<li style="float:left; padding:11px 0; width:100px;">
 				<a href="/home/edu" style="font-size:14px;">教育</a>
@@ -41,6 +41,7 @@
 		</ul>
 	</div>
 </div>
+<!--
 <div style="background:#e60012; height:48px;">
 	<div style="width:1000px; margin:0 auto;">
 		<div style="text-align:left; padding-top:8px;">
@@ -64,31 +65,26 @@
 		</div>
 	</div>
 </div>
+-->
 <div>
 	<div style="width:1000px; margin:0 auto;">
 		<div>
 			<ul style="padding:20px 0;">
 				<li style="width:20px; height:24px; background:#df091c; float:left;"></li>
 				<li style="float:left; line-height:24px; margin-left:10px;">
-					<a>首页 >> 新闻 >> 咨询 >> 正文</a>
+					<p><a href="/">首页</a> >> 新闻 >> 咨询 >> 正文</p>
 				</li>
 				<div style="clear:both;"></div>
 			</ul>
 			<div style="border:1px solid #d4d4d4;">
 				<div class="wrapper">
 					<div class="detail_main">
-						<h1>2015上海书展开幕 15万种图书亮相</h1>
-						<div class="detail_header_des">2015-8-22 10:08:05 来源：上海教育新闻网	作者：刘晓晶</div>
-						<img src="/assets/images/18.png" />
-						<div class="detail_img_des">《打造我们的感动日子--黄浦区教育工会创新案例》在上海书展上隆重举行首发仪式。（摄影：李立基）</div>
+						<h1><?php echo $essay->title;?></h1>
+						<div class="detail_header_des" style="text-align: right;"><?php echo $essay->time;?> <!--来源：上海教育新闻网	作者：刘晓晶--></div>
+						<img src="<?php echo $essay->thumbnail;?>" style="max-width:660px;margin-bottom:10px;" />
+						<div class="detail_img_des"><?php echo $essay->summary;?></div>
 						<div class="detail_text">
-							<p>黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例</p>
-							<p>黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例</p>
-							<p>黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例</p>
-							<p>黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例</p>
-							<p>黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例</p>
-							<p>黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例黄浦区教育工会创新案例</p>
-							<div class="detail_author">责任编辑：刘诗雨</div>
+							<?php echo $essay->content;?>
 						</div>
 					</div>
 					<div class="detail_side">

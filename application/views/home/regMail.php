@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <title></title>
@@ -43,14 +43,14 @@
 							<div style="padding-top:60px; width:450px; margin-left:138px;text-align:right;">
 								<div>
 									<a><font style="color:red;">*</font>电子邮箱：</a>
-									<input type="text" style="width:250px; height:28px; border:1px solid #d4d4d4; color:#646464;font-size:12px;padding:0 5px;" placeholder="请输入邮箱"/>
+									<input id="email" type="text" style="width:250px; height:28px; border:1px solid #d4d4d4; color:#646464;font-size:12px;padding:0 5px;" placeholder="请输入邮箱"/>
 									<!--
 									<button style="height:30px; border:1px solid #d4d4d4; background:#dcdcdc; width:86px;">获取验证码</button>
 									-->
 							    </div>
 								<div style="padding-top:25px;">
 									<a><font style="color:red;">*</font>登录密码：</a>
-									<input type="password" style="width:250px; height:28px; border:1px solid #d4d4d4; color:#646464;font-size:12px;padding:0 5px;"/>
+									<input id="password" type="password" style="width:250px; height:28px; border:1px solid #d4d4d4; color:#646464;font-size:12px;padding:0 5px;"/>
 									<!--
 									<div style="margin-top:4px;">
 										<button style="background:#ff9c00; border:none; font-size:9px; width:81px; color:#ffffff;">强</button>
@@ -61,11 +61,11 @@
 							    </div>
 								<div style="padding-top:25px;">
 									<a><font  style="color:red;">*</font>确认登录密码：</a>
-									<input type="password" style="width:250px; height:28px; border:1px solid #d4d4d4; color:#646464;font-size:12px;padding:0 5px;"/>
+									<input id="repassword" type="password" style="width:250px; height:28px; border:1px solid #d4d4d4; color:#646464;font-size:12px;padding:0 5px;"/>
 							    </div style="padding-top:25px;">
 								<div style="margin-top:25px;">
 									<a><font style="color:red;">*</font>验证码：</a>
-									<input type="text" style="width:86px; height:28px; border:1px solid #d4d4d4; color:#646464;font-size:12px;padding:0 3px;"/>
+									<input id="validcode" type="text" style="width:86px; height:28px; border:1px solid #d4d4d4; color:#646464;font-size:12px;padding:0 3px;"/>
 									<img id="validCodeImg" src="" width="87" height="30" style="cursor:pointer;vertical-align: top;" onclick="refreshCode();">
 									<a style="font-size:12px;color:#C3C3C3;">点击图片更换</a>
 							    </div>
@@ -87,6 +87,42 @@
 	<?php require('foot.php');?>
 	<script type="text/javascript">
 		refreshCode();
+		function register(){
+			if($("#email").val()==''){
+				alert('邮箱不能为空！');
+				return false;
+			}
+			if(!isEmail($("#email").val())){
+				alert('邮箱格式不正确！');
+				return false;
+			}
+			if($("#password").val()==''){
+				alert('密码不能为空！');
+				return false;
+			}
+			if($("#repassword").val()==''){
+				alert('请输入确认密码！');
+				return false;
+			}
+			if ($("password").val()!=$("repassword").val()){
+				alert('两次密码不一致');
+				return false;
+			}
+			if($("#validcode").val()==''){
+				alert('请输入验证码！');
+				return false;
+			}
+			var data=new Object();
+			data.infoType='user';
+			data.email=$("#email").val();
+			data.password=$("#password").val();
+			data.validcode=$("#validcode").val();
+			dataHandler('/common/addInfo',data,null,null,null,registerSuccess,false,false);
+		}
+		function registerSuccess(){
+			alert('恭喜，注册成功，点击确定跳转至登录页面！');
+			location.href="/home/login";
+		}
 	</script>
 </body>
 </html>

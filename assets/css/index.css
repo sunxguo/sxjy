@@ -112,7 +112,7 @@ i{font-size: 150%;color: #0075A9;}
 .picScroll-left .bd ul{ overflow:hidden; zoom:1; }
 .picScroll-left .bd ul li{ margin:0 8px; float:left; _display:inline; overflow:hidden; text-align:center;  }
 .picScroll-left .bd ul li .pic{ text-align:center; }
-.picScroll-left .bd ul li .pic img{ width:120px; height:90px; display:block;  padding:2px; border:1px solid #ccc; }
+.picScroll-left .bd ul li .pic img{ width:120px; height:150px; display:block;  padding:2px; border:1px solid #ccc; }
 .picScroll-left .bd ul li .pic a:hover img{ border-color:#999;  }
 .picScroll-left .bd ul li .title{ line-height:24px;   }
 

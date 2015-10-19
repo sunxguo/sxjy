@@ -4,6 +4,11 @@
 <title></title>
 <link rel="stylesheet" href="/assets/css/index.css"/>
 <link rel="stylesheet" type="text/css" href="/assets/plugins/JqueryPagination/jquery.pagination.css">
+<style type="text/css">
+	.main-content p{
+		color: #000 ;
+	}
+</style>
 </head>
 <body>
 	<?php require('head.php');?>
@@ -32,15 +37,15 @@
 							<a href="/home/news" class="channel channel-news">新 闻 频 道</a>
 						</li>
 						<li style="float:left; margin-left:26px; margin-top:10px;">	
-							<a href="/home/newsSub" style="color:#ffffff;">资 讯</a>
+							<a href="/home/newsSub?id=2" style="color:#ffffff;">资 讯</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="/home/newsSub"  style="color:#ffffff;">时 评</a>
+							<a href="/home/newsSub?id=3"  style="color:#ffffff;">时 评</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="/home/newsSub"  style="color:#ffffff;">人 物</a>
+							<a href="/home/newsSub?id=4"  style="color:#ffffff;">人 物</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="/home/newsSub"  style="color:#ffffff;">三晋教育</a>
+							<a href="/home/newsSub?id=5"  style="color:#ffffff;">三晋教育</a>
 							<b style="color:#ffffff;">丨</b>
-							<a href="/home/newsSub"  style="color:#ffffff;">教育广角</a>
+							<a href="/home/newsSub?id=6"  style="color:#ffffff;">教育广角</a>
 						</li>
 						<div style="clear:both;"></div>
 					</ul>
@@ -48,17 +53,18 @@
 			</div>
 		</div>
 		<div>
-		<div style="width:1000px; margin:0 auto;">
+		<div class="main-content" style="width:1000px; margin:0 auto;">
 			<div>
 				<ul style="padding:20px 0;">
 					<li style="width:20px; height:24px; background:#df091c; float:left;"></li>
 					<li style="float:left; line-height:24px; margin-left:10px;">
-						<a>首页 >> 搜索 >> 新闻 >> 关键字 : 大学</a>
+						<p>首页 >> 新闻 >> </p>
 					</li>
 					<div style="clear:both;"></div>
 				</ul>
 				<div style="border:1px solid #d4d4d4;">
 					<div style="padding:20px 20px;">
+						<?php if():?>
 						<ul>
 							<li style="float:left;"><img src="/assets/images/81.png"/></li>
 							<li style="float:left; padding:20px 40px;">
@@ -72,6 +78,7 @@
 							</li>
 							<div style="clear:both;"></div>
 						</ul>
+						<??>
 						<div style="border-top:1px dashed #d4d4d4; margin-top:-20px;"></div> 
 						<ul style="padding:20px 0;">
 							<li style="float:left;"><p style="font-size:18px; color:#008cc8; padding:5px 0;">山西省第四届大学生艺术展演活动艺术作品展览</p></li>
@@ -139,16 +146,17 @@
 					</div>
 					<div style="background:#eeeeee; height:42px;margin-top:20px;">
 					<ul style="padding:8px 250px;">
-						<li style="width:40px; height:24px; background:#4dc1c5; border-radius:4px; float:left; text-align:center; line-height:24px; color:#ffffff;margin:0 10px;">《</li>
-						<li style="float:left; text-align:center; line-height:24px;">
-							<a style="margin:0 20px;">1</a>
-							<a style="margin:0 20px; background:#4dc1c5; padding:5px 5px; border-radius:4px; color:#ffffff;">2</a>
-							<a style="margin:0 20px;">3</a>
-							<a style="margin:0 20px;">4</a>			
-							<a style="margin:0 20px;">···</a>
-							<a style="margin:0 20px;">1223</a>
+						<li style="width:40px; height:24px; background:#4dc1c5; border-radius:4px; float:left; text-align:center; line-height:24px; color:#ffffff;margin:0 10px;">
+							<a href="<?php echo $pageInfo['prevPage']=='no'?'javascript:void();':$pageInfo['prevPage'];?>"><<</a>
 						</li>
-						<li style="width:40px; height:24px; background:#4dc1c5; border-radius:4px; float:right;text-align:center; line-height:24px; color:#ffffff;">》</li>
+						<li style="float:left; text-align:center; line-height:24px;">
+							<?php for($i=1; $i <=$pageInfo['pageAmount'] ; $i++):?>
+							<a href="<?php echo ($pageInfo['jumpPage']).$i;?>" style="margin:0 20px;<?php if($i==$pageInfo['currentPage']):?>background:#4dc1c5; padding:5px 5px; border-radius:4px; color:#ffffff;<?php endif;?>"><?php echo $i;?></a>
+							<?php endfor;?>
+						</li>
+						<li style="width:40px; height:24px; background:#4dc1c5; border-radius:4px; float:right;text-align:center; line-height:24px; color:#ffffff;">
+							<a href="<?php echo $pageInfo['nextPage']=='no'?'javascript:void();':$pageInfo['nextPage'];?>">>></a>
+						</li>
 						<div style="clear:both;"></div>
 					</ul>
 				</div>
@@ -163,6 +171,6 @@
 <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
 <script src="plugins/JqueryPagination/jquery.pagination-1.2.7.min.js"></script>
 <script type="text/javascript">
-$("#page1").page({ total: 1000 });
+$("#page1").page({ total: <?php echo $pageInfo->pageAmount;?> });
 </script>
 </html>

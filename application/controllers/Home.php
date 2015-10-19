@@ -138,13 +138,73 @@ class Home extends CI_Controller {
 		$this->load->view('/home/index',$data);
 	}
 	public function search(){
-		$this->load->view('/home/search');
+		$keywords=isset($_GET['keywords'])?$_GET['keywords']:'';
+		$baseUrl='/home/search?keywords='.$keywords;
+		$selectUrl='/home/search?keywords='.$keywords;
+		$currentPage=isset($_GET['page'])?$_GET['page']:1;
+		$amountPerPage=20;
+		// $subColumns=$this->getdata->getColumns($english,true);
+		$parameters=array('keywords'=>$keywords);
+		if(isset($_GET['column'])){
+			$parameters['column']=$_GET['column'];
+		}
+		// else{
+		// 	$parameters['columns']=$subColumns;
+		// }
+		// if(isset($_GET['keywords'])) $parameters['keywords']=$_GET['keywords'];
+
+		$parameters['result']='count';
+		$amount=$this->getdata->getEssays($parameters);
+		$pageInfo=$this->getdata->getPageLink($baseUrl,$selectUrl,$currentPage,$amountPerPage,$amount);
+
+		$parameters['result']='data';
+		$parameters['limit']=$pageInfo['limit'];
+		$parameters['orderBy']=array('time'=>'DESC');
+
+		$essays=$this->getdata->getEssays($parameters);
+		$data=array(
+			'essays'=>$essays,
+			'pageInfo'=>$pageInfo
+		);
+		$this->load->view('/home/search',$data);
 	}
 	public function news(){
 		$this->load->view('/home/news');
 	}
 	public function newsSub(){
-		$this->load->view('/home/newsSub');
+		if(!isset($_GET['id']) || !is_numeric($_GET['id'])){
+			$this->load->view('redirect',array('info'=>'抱歉，链接错误！'));
+			return false;
+		}
+		$id=$_GET['id'];
+		$baseUrl='/home/newsSub?id='.$id;
+		$selectUrl='/home/newsSub?id='.$id;
+		$currentPage=isset($_GET['page'])?$_GET['page']:1;
+		$amountPerPage=20;
+		// $subColumns=$this->getdata->getColumns($english,true);
+		$parameters=array('column'=>$id);
+		// if(isset($_GET['column'])){
+		// 	$parameters['column']=$_GET['column'];
+		// }
+		// else{
+		// 	$parameters['columns']=$subColumns;
+		// }
+		// if(isset($_GET['keywords'])) $parameters['keywords']=$_GET['keywords'];
+
+		$parameters['result']='count';
+		$amount=$this->getdata->getEssays($parameters);
+		$pageInfo=$this->getdata->getPageLink($baseUrl,$selectUrl,$currentPage,$amountPerPage,$amount);
+
+		$parameters['result']='data';
+		$parameters['limit']=$pageInfo['limit'];
+		$parameters['orderBy']=array('time'=>'DESC');
+
+		$essays=$this->getdata->getEssays($parameters);
+		$data=array(
+			'essays'=>$essays,
+			'pageInfo'=>$pageInfo
+		);
+		$this->load->view('/home/newsSub',$data);
 	}
 	public function edu(){
 		$this->load->view('/home/edu');
@@ -189,6 +249,7 @@ class Home extends CI_Controller {
 		}
 		$data=array();
 		$data['essay']=$this->getdata->getContent('essay',$_GET['id']);
+		$data['column']=$this->getdata->getContent('column',$data['essay']->column);
 		$this->load->view('/home/detail',$data);
 	}
 	public function login(){

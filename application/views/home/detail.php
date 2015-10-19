@@ -72,7 +72,7 @@
 			<ul style="padding:20px 0;">
 				<li style="width:20px; height:24px; background:#df091c; float:left;"></li>
 				<li style="float:left; line-height:24px; margin-left:10px;">
-					<p><a href="/">首页</a> >> 新闻 >> 咨询 >> 正文</p>
+					<p><a href="/">首页</a> >> 正文</p>
 				</li>
 				<div style="clear:both;"></div>
 			</ul>

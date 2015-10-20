@@ -168,6 +168,39 @@ class GetData{
 		}
 		return $essays;
 	}
+	public function getUsers($parameters){
+		$condition=array(
+			'table'=>'user',
+			'result'=>$parameters['result']
+		);
+		if(isset($parameters['gender'])){
+			$condition['where']['gender']=$parameters['gender'];
+		}
+		if(isset($parameters['orderBy'])){
+			$condition['order_by']=$parameters['orderBy'];
+		}
+		if(isset($parameters['keywords'])){
+			$condition['like']=array('username'=>$parameters['keywords']);
+		}
+		if(isset($parameters['limit'])){
+			$condition['limit']=$parameters['limit'];
+		}
+		if(isset($parameters['time'])){
+			if(isset($parameters['time']['begin'])){
+				$condition['where']['time >=']=$parameters['time']['begin'];
+			}
+			if(isset($parameters['time']['end'])){
+				$condition['where']['time <=']=$parameters['time']['end'];
+			}
+		}
+		$users=$this->getData($condition);
+		// if($parameters['result']=='data'){
+		// 	foreach ($users as $key => $value) {
+		// 		$value->columnName=$this->getContent('column',$value->column)->name;
+		// 	}
+		// }
+		return $users;
+	}
 	public function getColumns($type,$isOnlyId){
 		switch ($type) {
 			case 'home'://首页

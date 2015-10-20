@@ -124,6 +124,36 @@ class Admin extends CI_Controller {
 	public function about(){
 		$this->adminCommon('about','关于内容');
 	}
+	public function users(){
+		// $keywords=isset($_GET['keywords'])?$_GET['keywords']:'';
+		$baseUrl='/admin/users?placeholder=true';
+		$selectUrl='/admin/users?placeholder=true';
+		$currentPage=isset($_GET['page'])?$_GET['page']:1;
+		$amountPerPage=20;
+		// $subColumns=$this->getdata->getColumns($english,true);
+		$parameters=array();
+		if(isset($_GET['gender'])){
+			$parameters['gender']=$_GET['gender'];
+		}
+		if(isset($_GET['keywords'])){
+			$parameters['keywords']=$_GET['keywords'];
+		}
+
+		$parameters['result']='count';
+		$amount=$this->getdata->getUsers($parameters);
+		$pageInfo=$this->getdata->getPageLink($baseUrl,$selectUrl,$currentPage,$amountPerPage,$amount);
+
+		$parameters['result']='data';
+		$parameters['limit']=$pageInfo['limit'];
+		$parameters['orderBy']=array('time'=>'DESC');
+
+		$users=$this->getdata->getUsers($parameters);
+		$data=array(
+			'users'=>$users,
+			'pageInfo'=>$pageInfo
+		);
+		$this->adminBaseHandler('用户管理',array('user'=>true),'userlist',$data);
+	}
 	public function columnList(){
 		$data=array();
 		$this->load->view('admin/columnList',$data);

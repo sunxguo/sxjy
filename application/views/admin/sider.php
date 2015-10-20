@@ -25,6 +25,15 @@
 			</ul>
 		</li>
 		<li>
+			<a href="/admin/users" class="nav-header <?php echo array_key_exists('user',$sider)?'active':'';?>">
+				<i class="icon-user"><img src="/assets/images/cms/icon/icon-uc-bs.png"></i>
+				<span>用户管理</span>
+				<!--
+				<span class="btn-right sprite-ui"></span>
+				-->
+			</a>
+		</li>
+		<li>
 			<a href="/admin/statistic" class="nav-header <?php echo array_key_exists('statistic',$sider)?'active':'';?>">
 				<i class="icon-user"><img src="/assets/images/cms/icon/icon-data-bs.png"></i>
 				<span>统计</span>

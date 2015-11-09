@@ -171,6 +171,15 @@ class Home extends CI_Controller {
 	public function news(){
 		$this->load->view('/home/news');
 	}
+	public function channel1(){
+		$this->load->view('/home/channel1');
+	}
+	public function channel2(){
+		$this->load->view('/home/channel2');
+	}
+	public function channel3(){
+		$this->load->view('/home/channel3');
+	}
 	public function newsSub(){
 		if(!isset($_GET['id']) || !is_numeric($_GET['id'])){
 			$this->load->view('redirect',array('info'=>'抱歉，链接错误！'));
